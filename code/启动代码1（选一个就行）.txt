@@ -1,5 +1,0 @@
-cd C:\Users\Administrator\Documents\code
-conda create -n plane_rag python=3.12
-conda activate plane_rag 
-pip install -r requirements.txt
-streamlit run app.py
