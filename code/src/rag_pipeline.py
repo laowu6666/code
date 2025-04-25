@@ -8,6 +8,7 @@ import os
 from openai import OpenAI
 import re
 import logging
+import httpx
 
 # 设置日志记录到文件
 rag_logger = logging.getLogger('rag_pipeline')
@@ -23,7 +24,8 @@ from src.config import (
     SUPPORTED_LANGUAGES,
     DEEPSEEK_API_CONFIG,
     CACHE_DIR,
-    CACHE_EXPIRY
+    CACHE_EXPIRY,
+    PROXIES  # 假设你在 config 中添加了 PROXIES 配置
 )
 from src.data_processor import DataProcessor
 from src.vector_store import VectorStore
@@ -39,15 +41,12 @@ class RAGPipeline:
         self.vector_store = VectorStore()
         self.cache = self._load_cache()
 
-        # 初始化 DeepSeek 客户端
-        try:
-            self.client = OpenAI(
-                api_key=DEEPSEEK_API_CONFIG['api_key'],
-                base_url=DEEPSEEK_API_CONFIG['base_url']
-            )
-        except Exception as e:
-            logger.error(f"初始化 OpenAI 客户端失败: {e}")
-            raise
+        # 通过 httpx 客户端配置 proxy
+        self.client = OpenAI(
+            api_key=DEEPSEEK_API_CONFIG['api_key'],
+            base_url=DEEPSEEK_API_CONFIG['base_url'],
+            http_client=httpx.Client(proxies=PROXIES)  # 使用代理配置
+        )
 
     def _load_cache(self) -> Dict:
         """加载缓存"""
