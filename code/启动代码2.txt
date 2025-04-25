@@ -1,0 +1,15 @@
+--------------------------
+
+cd C:\Users\Administrator\Documents\code - 最终版
+conda install pytorch torchvision torchaudio cudatoolkit=12.8 -c pytorch
+conda create -n plane_rag python=3.12
+conda activate plane_rag 
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+pip install faiss-cpu
+streamlit run app.py
+----------------------------
+1.conda创建环境
+2.激活环境
+3.安装依赖包
+4.启动！

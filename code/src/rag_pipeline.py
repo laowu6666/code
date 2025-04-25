@@ -1,0 +1,357 @@
+import json
+from typing import Dict, List, Optional, Tuple
+from pathlib import Path
+import time
+from loguru import logger
+from langdetect import detect, DetectorFactory
+import os
+from openai import OpenAI
+import re
+import logging
+
+# 设置日志记录到文件
+rag_logger = logging.getLogger('rag_pipeline')
+rag_logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler('rag_pipeline_debug.log', mode='w')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+rag_logger.addHandler(file_handler)
+
+# 设置语言检测的随机种子，确保结果一致性
+DetectorFactory.seed = 0
+
+from src.config import (
+    SUPPORTED_LANGUAGES,
+    DEEPSEEK_API_CONFIG,
+    CACHE_DIR,
+    CACHE_EXPIRY
+)
+from src.data_processor import DataProcessor
+from src.vector_store import VectorStore
+
+
+class RAGPipeline:
+    def __init__(self):
+        """初始化 RAG Pipeline"""
+        # 确保缓存目录存在
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+        self.data_processor = DataProcessor()
+        self.vector_store = VectorStore()
+        self.cache = self._load_cache()
+
+        # 初始化 DeepSeek 客户端
+        try:
+            self.client = OpenAI(
+                api_key=DEEPSEEK_API_CONFIG['api_key'],
+                base_url=DEEPSEEK_API_CONFIG['base_url']
+            )
+        except Exception as e:
+            logger.error(f"初始化 OpenAI 客户端失败: {e}")
+            raise
+
+    def _load_cache(self) -> Dict:
+        """加载缓存"""
+        cache_file = CACHE_DIR / "response_cache.json"
+        if cache_file.exists():
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    cache = json.load(f)
+                # 清理过期缓存
+                current_time = time.time()
+                cache = {
+                    k: v for k, v in cache.items()
+                    if current_time - v['timestamp'] < CACHE_EXPIRY
+                }
+                return cache
+            except Exception as e:
+                logger.error(f"加载缓存失败: {e}")
+                return {}
+        return {}
+
+    def _save_cache(self) -> None:
+        """保存缓存"""
+        try:
+            cache_file = CACHE_DIR / "response_cache.json"
+            # 确保缓存目录存在
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(self.cache, f, ensure_ascii=False, indent=2)
+
+            # 确保文件写入到磁盘
+            f.flush()
+            os.fsync(f.fileno())
+
+        except Exception as e:
+            logger.error(f"保存缓存失败: {e}")
+
+    def _detect_language(self, text: str) -> str:
+        """
+        检测文本语言
+
+        Args:
+            text: 输入文本
+
+        Returns:
+            语言代码 ('zh', 'en', 'fr')
+        """
+        if not text.strip():
+            return 'en'  # 空文本默认使用英语
+
+        # 简单的中文检测
+        if any('\u4e00' <= char <= '\u9fff' for char in text):
+            return 'zh'
+
+        try:
+            detected = detect(text)
+            if detected in ['zh-cn', 'zh-tw']:
+                return 'zh'
+            elif detected == 'en':
+                return 'en'
+            elif detected == 'fr':
+                return 'fr'
+            else:
+                return 'en'  # 默认使用英语
+        except:
+            return 'en'  # 检测失败时默认使用英语
+
+    def _translate_result(self, result: str, target_language: str) -> str:
+        """
+        使用 DeepSeek API 翻译结果
+
+        Args:
+            result: 英文结果文本
+            target_language: 目标语言代码
+
+        Returns:
+            翻译后的文本
+        """
+        rag_logger.debug(f"开始翻译和格式化，目标语言: {target_language}")
+        rag_logger.debug(f"原始文本长度: {len(result)}")
+
+        if target_language == 'en':
+            rag_logger.debug("目标语言是英文，跳过翻译，只进行简单格式化")
+            # 只保留基本格式和术语
+            formatted = self._simplify_formatting(result)
+            rag_logger.debug(f"英文结果格式化完成，长度: {len(formatted)}")
+            return formatted
+
+        language_names = {
+            'zh': '中文',
+            'fr': 'French'
+        }
+
+        try:
+            # 简化原始文本格式
+            simplified_result = self._simplify_formatting(result)
+            rag_logger.debug(f"简化后文本长度: {len(simplified_result)}")
+
+            rag_logger.debug("调用DeepSeek API进行翻译")
+            response = self.client.chat.completions.create(
+                model=DEEPSEEK_API_CONFIG['model'],
+                messages=[
+                    {"role": "system", "content": """You are a professional aircraft maintenance document translator.
+
+                    Keep the translation simple and directly usable:
+                    1. Maintain paragraph structure but don't worry about complex markdown
+                    2. Only use ** for important warnings or critical information
+                    3. Keep technical terms in their original form, especially:
+                       - System names like CDS, BITE, DEU, CPU 
+                       - Error codes like 2075 00 11
+                       - Task numbers like 31-62-801"""},
+                    {"role": "user",
+                     "content": f"""Translate this aircraft maintenance text from English to {language_names[target_language]}.
+
+                    IMPORTANT: Keep all technical terms, numbers, error codes and task references in their original form.
+
+                    Text to translate:
+                    {simplified_result}"""}
+                ],
+                temperature=0.1,
+                max_tokens=DEEPSEEK_API_CONFIG['max_tokens']
+            )
+            translated_text = response.choices[0].message.content.strip()
+            rag_logger.debug(f"翻译完成，文本长度: {len(translated_text)}")
+
+            return translated_text
+        except Exception as e:
+            rag_logger.error(f"翻译失败: {e}")
+            return result  # 翻译失败时返回原文
+
+    def _simplify_formatting(self, text: str) -> str:
+        """
+        简化文本格式，只保留基本结构和术语
+
+        Args:
+            text: 输入文本
+
+        Returns:
+            简化后的文本
+        """
+        # 简单处理，保留段落和基本结构
+        lines = text.split('\n')
+        processed_lines = []
+
+        for line in lines:
+            # 保留行基本结构
+            processed_lines.append(line)
+
+        result = '\n'.join(processed_lines)
+
+        # 确保技术术语保持原样
+        tech_terms = ['CDS', 'BITE', 'DEU', 'CDU', 'CPU', 'AMM', 'FIM', 'SSM', 'WDM',
+                      'ELEC', 'OVERHEAT', 'TEMP', 'IEMP', 'ZEMP', 'AEMP', 'SCEA', 'ALL']
+
+        # 我们不做额外处理，只返回原始文本，让API自己处理
+        return result
+
+    def query(self, query: str) -> Dict:
+        """
+        处理用户查询
+
+        Args:
+            query: 用户输入的查询文本
+
+        Returns:
+            Dict with 'answer' and 'sources'
+        """
+        # 检测查询语言
+        query_language = self._detect_language(query)
+
+        # 尝试从查询中提取任务编号（如 31-62 TASK 801）
+        task_pattern = re.compile(r'(\d{2}-\d{2}(?:-\d{2,3})?)\s*(?:TASK|任务)?\s*(\d{3})')
+        task_match = task_pattern.search(query)
+
+        formatted_fault_code = None  # 确保变量在函数作用域内定义
+
+        if task_match:
+            # 提取到任务编号
+            task_section = task_match.group(1)
+            task_number = task_match.group(2)
+            fim_task = f"{task_section}-{task_number}"
+
+            result_data = self.data_processor.get_result_by_fim_task(fim_task)
+            if result_data:
+                # 翻译结果
+                translated_result = self._translate_result(result_data['result'], query_language)
+
+                return {
+                    'answer': translated_result,
+                    'sources': [{
+                        'fim_task': fim_task,
+                        'title': result_data['title'],
+                        'score': 1.0,  # 精确匹配，设置最高分,
+                    }]
+                }
+
+        # 尝试从查询中提取故障码
+        # 移除所有空格并查找8位数字模式
+        normalized_query = ''.join(query.split())
+        fault_code_match = re.search(r'\d{8}', normalized_query)
+
+        if fault_code_match:
+            # 提取到故障码，直接查询对应的 FIM Task
+            fault_code = fault_code_match.group()
+
+            # 检查故障码长度是否符合预期
+            if len(fault_code) != 8:
+                logger.warning(f"故障码长度不符合预期: {fault_code}")
+                return {
+                    'answer': "抱歉，故障码格式不正确，请提供完整的8位故障码。",
+                    'sources': []
+                }
+
+            # 转换为标准格式 (XXX XXX XX)
+            formatted_fault_code = f"{fault_code[:3]} {fault_code[3:6]} {fault_code[6:]}"
+
+            fim_task = self.data_processor.get_fim_task_by_fault_code(formatted_fault_code)
+            if fim_task:
+                result_data = self.data_processor.get_result_by_fim_task(fim_task)
+                if result_data:
+                    # 获取故障描述
+                    description = self.data_processor.get_fault_description_by_code(formatted_fault_code,
+                                                                                 query_language)
+
+                    # 翻译结果
+                    translated_result = self._translate_result(result_data['result'], query_language)
+
+                    return {
+                        'answer': translated_result,
+                        'sources': [{
+                            'fault_code': formatted_fault_code,
+                            'description': description,
+                            'fim_task': fim_task,
+                            'title': result_data['title'],
+                            'score': 1.0,  # 精确匹配，设置最高分,
+                        }]
+                    }
+
+        # 如果没有找到故障码或任务编号或没有对应结果，使用向量搜索
+        try:
+            # 使用缓存
+            cache_key = f"{query_language}:{query}"
+            if cache_key in self.cache:
+                cached_response = self.cache[cache_key]
+                if time.time() - cached_response['timestamp'] < CACHE_EXPIRY:
+                    logger.info("使用缓存的响应")
+                    return {
+                        'answer': cached_response['answer'],
+                        'sources': cached_response['sources']
+                    }
+
+            # 执行向量搜索
+            search_results = self.vector_store.search(query, query_language)
+
+            if not search_results:
+                no_results_msg = {
+                    'zh': "抱歉，没有找到相关的故障描述。请尝试使用不同的描述方式。",
+                    'en': "Sorry, no relevant fault descriptions found. Please try using different terms.",
+                    'fr': "Désolé, aucune description de panne pertinente n'a été trouvée. Veuillez essayer d'utiliser des termes différents."
+                }[query_language]
+                response = {'answer': no_results_msg, 'sources': []}
+            else:
+                # 获取最相关的结果
+                best_match = search_results[0]
+                fault_code, description, fim_task = best_match[:3]
+
+                # 获取处理结果
+                result_data = self.data_processor.get_result_by_fim_task(fim_task)
+                if not result_data:
+                    no_solution_msg = {
+                        'zh': f"找到了故障码 {fault_code}，但未找到对应的处理方案。",
+                        'en': f"Found fault code {fault_code}, but no solution is available.",
+                        'fr': f"Code de panne {fault_code} trouvé, mais aucune solution n'est disponible."
+                    }[query_language]
+                    response = {'answer': no_solution_msg, 'sources': []}
+                else:
+                    # 翻译结果
+                    translated_result = self._translate_result(result_data['result'], query_language)
+
+                    response = {
+                        'answer': translated_result,
+                        'sources': [{
+                            'fault_code': formatted_fault_code if formatted_fault_code else fault_code,
+                            'description': description,
+                            'fim_task': fim_task,
+                            'title': result_data['title'],
+                            'score': float(best_match[3]),
+                        }]
+                    }
+
+            # 更新缓存
+            self.cache[cache_key] = {
+                'answer': response['answer'],
+                'sources': response['sources'],
+                'timestamp': time.time()
+            }
+            self._save_cache()
+
+            return response
+
+        except Exception as e:
+            error_msg = f"处理查询时出错: {str(e)}"
+            logger.error(error_msg)
+            return {
+                'answer': "抱歉，处理您的请求时出现错误。请稍后重试。",
+                'sources': []
+            }

@@ -1,0 +1,86 @@
+2025-04-25 15:20:44,624 - INFO - NumExpr defaulting to 6 threads.
+2025-04-25 15:20:44,959 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-04-25 15:20:44,959 - INFO - Loading faiss with AVX2 support.
+2025-04-25 15:20:44,981 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-25 15:20:50,278 - DEBUG - 从 chat_history\latest_sessions.json 加载了聊天会话
+2025-04-25 15:20:50,308 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+2025-04-25 15:20:50,315 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-04-25 15:20:50,599 - WARNING - No sentence-transformers model found with name sentence-transformers/paraphrase-multilingual-mpnet-base-v2. Creating a new one with MEAN pooling.
+2025-04-25 15:20:50,600 - DEBUG - Starting new HTTPS connection (2): huggingface.co:443
+2025-04-25 15:20:53,209 - DEBUG - Starting new HTTPS connection (3): huggingface.co:443
+2025-04-25 15:20:54,357 - INFO - Use pytorch device_name: cuda
+2025-04-25 15:20:55,013 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-04-25 15:20:55,014 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-04-25 15:20:55,362 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-04-25 15:20:55,362 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-04-25 15:20:55,702 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-04-25 15:20:55,702 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-04-25 15:20:56,058 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-04-25 15:20:56,058 - DEBUG - 显示历史消息: 角色=user
+2025-04-25 15:20:56,058 - DEBUG - 处理用户历史消息: 直接显示
+2025-04-25 15:20:56,059 - DEBUG - 显示历史消息: 角色=assistant
+2025-04-25 15:20:56,059 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-04-25 15:20:56,059 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-04-25 15:20:56,059 - DEBUG - 预处理前的原始Markdown文本长度: 532
+2025-04-25 15:20:56,059 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. 说明  
+(1) 本故障隔离程序用于检查液压系统是否处于良好状态，可帮助确定哪些部件存在磨损。  
+(2) 此程序可用于检查部件是否存在过量外部泄漏或液压系统的整体内部状况，也可用于系统排故。  
+(a) 对液压系统进行排故时，只需针对存在问题的系统（A系统、B系统或备用系统）执行相关程序。如...
+...
+。  
+(b) 若液压油泄漏率未超限，则继续后续检查。  
+
+(2) 执行液压系统内部泄漏检查（AMM PAGEBLOCK 29-00-00/601）。  
+(a) 若液压油泄漏率超出内部泄漏限制，则需修复泄漏原因。  
+
+（注：严格保留AMM任务编号、系统代号等专有名词原文，关键操作步骤加粗提示）
+2025-04-25 15:20:56,059 - DEBUG - 预处理后的文本长度: 532
+2025-04-25 15:20:56,059 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=532, 新长度=532)
+2025-04-25 15:20:56,060 - WARNING - 历史消息可能缺少Markdown格式: A. 说明  
+(1) 本故障隔离程序用于检查液压系统是否处于良好状态，可帮助确定哪些部件存在磨损。  
+(2) 此程序可用于检查部件是否存在过量外部泄漏或液压系统的整体内部状况，也可用于系统排故。 ...
+2025-04-25 15:20:56,060 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-04-25 15:20:56,060 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-04-25 15:20:56,061 - DEBUG - 显示历史消息: 角色=user
+2025-04-25 15:20:56,062 - DEBUG - 处理用户历史消息: 直接显示
+2025-04-25 15:20:56,062 - DEBUG - 显示历史消息: 角色=assistant
+2025-04-25 15:20:56,062 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-04-25 15:20:56,062 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-04-25 15:20:56,063 - DEBUG - 预处理前的原始Markdown文本长度: 1437
+2025-04-25 15:20:56,063 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) This fault isolation procedure is used to find if the hydraulic system is in good condition. It will
+help you to find which parts a...
+...
+eck (AMM PAGEBLOCK 29-00-00/601).
+(a) If the hydraulic fluid leakage rate is more than the internal leakage limits, then repair the
+cause of the leak.
+2025-04-25 15:20:56,063 - DEBUG - 预处理后的文本长度: 1437
+2025-04-25 15:20:56,063 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1437, 新长度=1437)
+2025-04-25 15:20:56,063 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) This fault isolation procedure is used to find if the hydraulic system is in good...
+2025-04-25 15:20:56,064 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-04-25 15:20:56,064 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-04-25 15:20:56,065 - DEBUG - 显示历史消息: 角色=user
+2025-04-25 15:20:56,065 - DEBUG - 处理用户历史消息: 直接显示
+2025-04-25 15:20:56,065 - DEBUG - 显示历史消息: 角色=assistant
+2025-04-25 15:20:56,066 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-04-25 15:20:56,066 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-04-25 15:20:56,066 - DEBUG - 预处理前的原始Markdown文本长度: 5913
+2025-04-25 15:20:56,066 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description  
+(1) La pompe électrique du système hydraulique de secours (EMDP) fournit la pression hydraulique au système hydraulique de secours.  ...
+...
+) :  
+a) Disjoncteur concerné :  
+Power Distribution Panel Number 2, P92  
+Row Col Number Name  
+F 2 C01449 STANDBY HYDRAULIC PUMP  
+6) Si 115 VAC est
+2025-04-25 15:20:56,066 - DEBUG - 预处理后的文本长度: 5913
+2025-04-25 15:20:56,067 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=5913, 新长度=5913)
+2025-04-25 15:20:56,067 - WARNING - 历史消息可能缺少Markdown格式: A. Description  
+(1) La pompe électrique du système hydraulique de secours (EMDP) fournit la pressio...
+2025-04-25 15:20:56,067 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-04-25 15:20:56,068 - DEBUG - 处理历史消息来源: 来源数量=1
