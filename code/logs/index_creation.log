@@ -1,0 +1,55 @@
+2025-04-21 21:18:25.153 | INFO     | src.data_processor:load_data:26 - 数据文件加载成功
+2025-04-21 21:18:25.153 | INFO     | src.data_processor:load_data:26 - 数据文件加载成功
+2025-04-21 21:18:33.612 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 zh 创建新的向量索引
+2025-04-21 21:18:33.612 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 zh 创建新的向量索引
+2025-04-21 21:18:33.615 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 en 创建新的向量索引
+2025-04-21 21:18:33.615 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 en 创建新的向量索引
+2025-04-21 21:18:33.617 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 fr 创建新的向量索引
+2025-04-21 21:18:33.617 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 fr 创建新的向量索引
+2025-04-21 21:18:33.624 | WARNING  | src.data_processor:validate_data:198 - 以下FIM Task在result.csv中缺失: {'28-21TASK 811', "Indication de quantité de fluide hydraulique : l'affichage du poste de pilotage indique zéro", '28-21TASK 810', 'Jauge du réservoir hydraulique : Affiche zéro ou moins', '28-21TASK 813', "Levier de train d'atterrissage : ne se déplace pas en position HAUT en vol", '33-10 TASK 801'}
+2025-04-21 21:18:33.624 | WARNING  | src.data_processor:validate_data:198 - 以下FIM Task在result.csv中缺失: {'28-21TASK 811', "Indication de quantité de fluide hydraulique : l'affichage du poste de pilotage indique zéro", '28-21TASK 810', 'Jauge du réservoir hydraulique : Affiche zéro ou moins', '28-21TASK 813', "Levier de train d'atterrissage : ne se déplace pas en position HAUT en vol", '33-10 TASK 801'}
+2025-04-21 21:18:33.624 | ERROR    | __main__:create_indexes:42 - 数据验证失败，请检查CSV文件
+2025-04-21 21:18:33.624 | ERROR    | __main__:create_indexes:42 - 数据验证失败，请检查CSV文件
+2025-04-21 21:22:09.717 | INFO     | src.data_processor:load_data:26 - 数据文件加载成功
+2025-04-21 21:22:17.174 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 zh 创建新的向量索引
+2025-04-21 21:22:17.174 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 en 创建新的向量索引
+2025-04-21 21:22:17.176 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 fr 创建新的向量索引
+2025-04-21 21:22:17.177 | WARNING  | src.data_processor:validate_data:198 - 以下FIM Task在result.csv中缺失: {'28-21TASK 810', '28-21TASK 811', "Levier de train d'atterrissage : ne se déplace pas en position HAUT en vol", "Indication de quantité de fluide hydraulique : l'affichage du poste de pilotage indique zéro", '33-10 TASK 801', '28-21TASK 813', 'Jauge du réservoir hydraulique : Affiche zéro ou moins'}
+2025-04-21 21:22:17.177 | ERROR    | __main__:create_indexes:36 - 数据验证失败，请检查CSV文件
+2025-04-21 21:22:17.178 | INFO     | __main__:main:91 - 索引创建完成！总耗时: 7.47 秒
+2025-04-21 21:23:43.667 | INFO     | src.data_processor:load_data:26 - 数据文件加载成功
+2025-04-21 21:23:52.112 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 zh 创建新的向量索引
+2025-04-21 21:23:52.112 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 en 创建新的向量索引
+2025-04-21 21:23:52.113 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 fr 创建新的向量索引
+2025-04-21 21:23:52.114 | WARNING  | src.data_processor:validate_data:189 - 以下FIM Task在result.csv中缺失: {"Indication de quantité de fluide hydraulique : l'affichage du poste de pilotage indique zéro", "Levier de train d'atterrissage : ne se déplace pas en position HAUT en vol", 'Jauge du réservoir hydraulique : Affiche zéro ou moins', '33-10TASK801'}
+2025-04-21 21:23:52.114 | ERROR    | __main__:create_indexes:36 - 数据验证失败，请检查CSV文件
+2025-04-21 21:23:52.114 | INFO     | __main__:main:91 - 索引创建完成！总耗时: 8.46 秒
+2025-04-21 21:24:31.786 | INFO     | src.data_processor:load_data:26 - 数据文件加载成功
+2025-04-21 21:24:39.309 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 zh 创建新的向量索引
+2025-04-21 21:24:39.309 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 en 创建新的向量索引
+2025-04-21 21:24:39.310 | INFO     | src.vector_store:_load_or_create_indexes:31 - 为语言 fr 创建新的向量索引
+2025-04-21 21:24:39.311 | WARNING  | src.data_processor:validate_data:210 - 以下FIM Task在result.csv中缺失: {'Jauge du réservoir hydraulique : Affiche zéro ou moins', "Levier de train d'atterrissage : ne se déplace pas en position HAUT en vol", "Indication de quantité de fluide hydraulique : l'affichage du poste de pilotage indique zéro", '33-10TASK801'}
+2025-04-21 21:24:39.311 | WARNING  | src.data_processor:validate_data:217 - 发现 4 个缺失的FIM Task，缺失率: 8.3%，继续处理
+2025-04-21 21:24:39.312 | INFO     | __main__:create_indexes:41 - 开始处理 中文 索引
+2025-04-21 21:24:39.312 | INFO     | src.vector_store:clear_index:142 - 已清除语言 zh 的向量索引
+2025-04-21 21:24:40.816 | INFO     | src.vector_store:_save_index:81 - 已保存语言 zh 的向量索引
+2025-04-21 21:24:40.817 | INFO     | __main__:create_indexes:62 - 处理进度: 100.0% (65/65)
+2025-04-21 21:24:40.817 | INFO     | __main__:create_indexes:66 - 中文 索引统计:
+2025-04-21 21:24:40.817 | INFO     | __main__:create_indexes:67 - - 总向量数: 65
+2025-04-21 21:24:40.817 | INFO     | __main__:create_indexes:68 - - 向量维度: 768
+2025-04-21 21:24:40.818 | INFO     | __main__:create_indexes:41 - 开始处理 English 索引
+2025-04-21 21:24:40.818 | INFO     | src.vector_store:clear_index:142 - 已清除语言 en 的向量索引
+2025-04-21 21:24:40.896 | INFO     | src.vector_store:_save_index:81 - 已保存语言 en 的向量索引
+2025-04-21 21:24:40.896 | INFO     | __main__:create_indexes:62 - 处理进度: 100.0% (65/65)
+2025-04-21 21:24:40.896 | INFO     | __main__:create_indexes:66 - English 索引统计:
+2025-04-21 21:24:40.896 | INFO     | __main__:create_indexes:67 - - 总向量数: 65
+2025-04-21 21:24:40.897 | INFO     | __main__:create_indexes:68 - - 向量维度: 768
+2025-04-21 21:24:40.897 | INFO     | __main__:create_indexes:41 - 开始处理 Français 索引
+2025-04-21 21:24:40.897 | INFO     | src.vector_store:clear_index:142 - 已清除语言 fr 的向量索引
+2025-04-21 21:24:41.053 | INFO     | src.vector_store:_save_index:81 - 已保存语言 fr 的向量索引
+2025-04-21 21:24:41.053 | INFO     | __main__:create_indexes:62 - 处理进度: 100.0% (65/65)
+2025-04-21 21:24:41.053 | INFO     | __main__:create_indexes:66 - Français 索引统计:
+2025-04-21 21:24:41.054 | INFO     | __main__:create_indexes:67 - - 总向量数: 65
+2025-04-21 21:24:41.054 | INFO     | __main__:create_indexes:68 - - 向量维度: 768
+2025-04-21 21:24:41.054 | INFO     | __main__:create_indexes:70 - 所有语言的索引创建完成
+2025-04-21 21:24:41.054 | INFO     | __main__:main:91 - 索引创建完成！总耗时: 9.28 秒
