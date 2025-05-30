@@ -1,5 +1,4 @@
 ﻿streamlit==1.32.0 
-pip install --upgrade
 langchain==0.1.11 https://pypi.tuna.tsinghua.edu.cn/simple
 pandas==2.2.1 https://pypi.tuna.tsinghua.edu.cn/simple
 faiss-cpu==1.8.0 https://pypi.tuna.tsinghua.edu.cn/simple
