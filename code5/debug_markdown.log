@@ -1,0 +1,2026 @@
+2025-05-29 20:22:33,654 - INFO - NumExpr defaulting to 6 threads.
+2025-05-29 20:22:34,161 - DEBUG - Environment variable FAISS_OPT_LEVEL is not set, so let's pick the instruction set according to the current CPU
+2025-05-29 20:22:34,161 - INFO - Loading faiss with AVX2 support.
+2025-05-29 20:22:34,219 - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-29 20:22:43,448 - DEBUG - 从 chat_history\latest_sessions.json 加载了聊天会话
+2025-05-29 20:22:43,532 - INFO - Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+2025-05-29 20:22:43,535 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-29 20:22:43,950 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-29 20:22:44,363 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config_sentence_transformers.json HTTP/11" 200 0
+2025-05-29 20:22:44,589 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/README.md HTTP/11" 200 0
+2025-05-29 20:22:44,866 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/modules.json HTTP/11" 200 0
+2025-05-29 20:22:45,096 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/sentence_bert_config.json HTTP/11" 200 0
+2025-05-29 20:22:45,311 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/config.json HTTP/11" 200 0
+2025-05-29 20:22:49,634 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/paraphrase-multilingual-mpnet-base-v2/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2025-05-29 20:22:50,918 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/revision/main HTTP/11" 200 6307
+2025-05-29 20:22:50,951 - INFO - Use pytorch device_name: cuda
+2025-05-29 20:23:05,522 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-05-29 20:23:05,522 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-05-29 20:23:05,865 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-05-29 20:23:05,866 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-05-29 20:23:06,213 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2025-05-29 20:23:06,213 - DEBUG - load_verify_locations cafile='D:\\anaconda3\\Lib\\site-packages\\certifi\\cacert.pem'
+2025-05-29 20:23:06,564 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:23:06,564 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:23:06,565 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:23:06,566 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:23:06,566 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:23:06,567 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:23:06,567 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:23:06,567 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:23:06,567 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:23:06,567 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:23:06,568 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:23:06,568 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:23:06,571 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:23:06,571 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:23:06,572 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:23:06,572 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:23:06,572 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:23:06,572 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:23:06,572 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:23:06,572 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:23:06,572 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:23:06,573 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:23:06,573 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:23:06,575 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:23:06,576 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:23:06,576 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:23:06,577 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:23:06,577 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:23:06,577 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:23:06,578 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:23:06,578 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:23:06,579 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1938, 新长度=1938)
+2025-05-29 20:23:06,580 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:03,290 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:30:03,290 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:03,291 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:03,291 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:03,292 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:03,292 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:03,292 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:30:03,292 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:30:03,292 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:30:03,292 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:30:03,293 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:03,293 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:30:03,296 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:03,296 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:03,297 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:03,297 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:03,297 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:03,297 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:30:03,297 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:30:03,297 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:30:03,298 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:30:03,298 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:03,298 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:30:03,301 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:03,301 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:03,302 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:03,304 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:03,305 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:03,306 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:30:03,306 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:30:03,306 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:30:03,306 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1938, 新长度=1938)
+2025-05-29 20:30:03,307 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:03,374 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748521803.json
+2025-05-29 20:30:03,384 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:30:03,385 - DEBUG - 用户指定输出语言: 跟随提问语言
+2025-05-29 20:30:03,385 - DEBUG - 最终输出语言确定为: zh
+2025-05-29 20:30:03,390 - DEBUG - 从RAG pipeline获取的原始响应长度: 94
+2025-05-29 20:30:03,390 - DEBUG - 响应前100字符: 你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。...
+2025-05-29 20:30:03,391 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:30:03,391 - DEBUG - 响应原始内容:
+你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。
+2025-05-29 20:30:03,391 - WARNING - 响应可能缺少Markdown格式，尝试增强格式化
+2025-05-29 20:30:03,391 - DEBUG - 增强格式化后的文本: 你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。...
+2025-05-29 20:30:03,391 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:30:03,392 - DEBUG - 预处理前的原始Markdown文本长度: 94
+2025-05-29 20:30:03,393 - DEBUG - 预处理前的原始Markdown文本:
+你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。
+2025-05-29 20:30:03,393 - DEBUG - 预处理后的文本长度: 94
+2025-05-29 20:30:03,393 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=False
+2025-05-29 20:30:03,393 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:30:03,393 - DEBUG - 开始流式输出...
+2025-05-29 20:30:03,393 - DEBUG - 流式输出: 总行数 = 3
+2025-05-29 20:30:03,393 - DEBUG - 流式输出: 生成段落(长度=56)
+2025-05-29 20:30:03,474 - DEBUG - 流式输出: 在行 2 检测到段落边界: **重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。
+2025-05-29 20:30:03,474 - DEBUG - 流式输出: 生成最后段落(长度=36)
+2025-05-29 20:30:03,474 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:30:03,476 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:30:03,476 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:30:03,476 - DEBUG - 会话中的消息数量: 7
+2025-05-29 20:30:03,480 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:30:03,480 - DEBUG - 添加到历史的消息长度: 94
+2025-05-29 20:30:03,480 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:30:03,480 - DEBUG - 更新前会话消息数量: 7
+2025-05-29 20:30:03,480 - DEBUG - 会话更新完成，当前消息数: 8
+2025-05-29 20:30:03,487 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748521803.json
+2025-05-29 20:30:03,487 - DEBUG - 会话最后消息摘要: 你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。
+2025-05-29 20:30:03,488 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:30:03,488 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:30:12,301 - DEBUG - 开始显示历史消息: 消息数量=8
+2025-05-29 20:30:12,301 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:12,301 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:12,302 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:12,302 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:12,302 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:12,302 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:30:12,302 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:30:12,302 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:30:12,302 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:30:12,303 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:12,304 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:30:12,306 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:12,307 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:12,308 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:12,309 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:12,309 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:12,309 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:30:12,309 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:30:12,309 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:30:12,309 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:30:12,309 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:12,309 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:30:12,314 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:12,315 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:12,315 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:12,316 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:12,316 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:30:12,316 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:30:12,316 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:30:12,317 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:30:12,317 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1938, 新长度=1938)
+2025-05-29 20:30:12,317 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:12,318 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:30:12,318 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:30:12,318 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:30:12,319 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:30:12,319 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:30:12,319 - DEBUG - 预处理前的原始Markdown文本长度: 94
+2025-05-29 20:30:12,319 - DEBUG - 预处理前的原始Markdown文本:
+你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  
+
+**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。
+2025-05-29 20:30:12,320 - DEBUG - 预处理后的文本长度: 94
+2025-05-29 20:30:12,320 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=94, 新长度=94)
+2025-05-29 20:30:12,320 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:30:12,321 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:30:12,326 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748521812.json
+2025-05-29 20:30:12,328 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:30:12,328 - DEBUG - 用户指定输出语言: 跟随提问语言
+2025-05-29 20:30:12,328 - DEBUG - 最终输出语言确定为: zh
+2025-05-29 20:30:12,329 - DEBUG - 执行向量存储检索
+2025-05-29 20:30:12,823 - DEBUG - 使用 DeepSeek API 生成答案，查询语言: zh
+2025-05-29 20:30:12,827 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a helpful AI assistant for aircraft maintenance.\n                    Analyze the provided context from maintenance manuals and answer the user's question.\n                    Focus on providing specific, actionable information based *only* on the provided context documents.\n                    If the context doesn't contain the answer, state that clearly.\n                    Keep your answer concise and to the point.\n                    Always cite the source document and section if possible.\n                    The user is asking in zh. Respond in English, the translation will be handled later."}, {'role': 'user', 'content': 'Context from maintenance manuals:\nFIM Task: 32-32 TASK 804\nDescription: 主起落架：收起缓慢 - 右侧。\nContent: A. Description\n(1) The extension and retraction sequence is the same for the left and right main landing gear. The\nmain landing gear extension and retraction system has these hydraulic components:\n(a) Main gear actuator\n(b) Downlock actuator\n(c) Uplock actuator\n(d) Transfer cylinder\n(e) Landing gear selector valve\n(2) The sequence for main gear retraction is as follows:\n(a) The landing gear selector valve supplies up pressure when the control lever for the\nlanding gear is moved to the UP position.\n(b) Up pressure goes to the transfer cylinder and moves the piston in the transfer cylinder to\nthe down side. This gives a time delay to let the downlock actuator unlock the downlock\nstrut.\n(c) Up pressure goes to the downlock actuator. The downlock actuator extends and unlocks\nthe downlock strut.\n(d) When the piston in the transfer cylinder gets to the end of the up side, up pressure goes\nto the up side of the main gear actuator. The main gear actuator moves to retract the\ngear.(e) When the ...\n\nFIM Task: 32-32 TASK 804\nDescription: 主起落架：放下缓慢 - 右侧。\nContent: A. Description\n(1) The extension and retraction sequence is the same for the left and right main landing gear. The\nmain landing gear extension and retraction system has these hydraulic components:\n(a) Main gear actuator\n(b) Downlock actuator\n(c) Uplock actuator\n(d) Transfer cylinder\n(e) Landing gear selector valve\n(2) The sequence for main gear retraction is as follows:\n(a) The landing gear selector valve supplies up pressure when the control lever for the\nlanding gear is moved to the UP position.\n(b) Up pressure goes to the transfer cylinder and moves the piston in the transfer cylinder to\nthe down side. This gives a time delay to let the downlock actuator unlock the downlock\nstrut.\n(c) Up pressure goes to the downlock actuator. The downlock actuator extends and unlocks\nthe downlock strut.\n(d) When the piston in the transfer cylinder gets to the end of the up side, up pressure goes\nto the up side of the main gear actuator. The main gear actuator moves to retract the\ngear.(e) When the ...\n\nFIM Task: 32-32 TASK 804\nDescription: 主起落架：收起缓慢 - 左侧。\nContent: A. Description\n(1) The extension and retraction sequence is the same for the left and right main landing gear. The\nmain landing gear extension and retraction system has these hydraulic components:\n(a) Main gear actuator\n(b) Downlock actuator\n(c) Uplock actuator\n(d) Transfer cylinder\n(e) Landing gear selector valve\n(2) The sequence for main gear retraction is as follows:\n(a) The landing gear selector valve supplies up pressure when the control lever for the\nlanding gear is moved to the UP position.\n(b) Up pressure goes to the transfer cylinder and moves the piston in the transfer cylinder to\nthe down side. This gives a time delay to let the downlock actuator unlock the downlock\nstrut.\n(c) Up pressure goes to the downlock actuator. The downlock actuator extends and unlocks\nthe downlock strut.\n(d) When the piston in the transfer cylinder gets to the end of the up side, up pressure goes\nto the up side of the main gear actuator. The main gear actuator moves to retract the\ngear.(e) When the ...\n\nFIM Task: 32-32 TASK 804\nDescription: 主起落架：放下缓慢 - 左侧。\nContent: A. Description\n(1) The extension and retraction sequence is the same for the left and right main landing gear. The\nmain landing gear extension and retraction system has these hydraulic components:\n(a) Main gear actuator\n(b) Downlock actuator\n(c) Uplock actuator\n(d) Transfer cylinder\n(e) Landing gear selector valve\n(2) The sequence for main gear retraction is as follows:\n(a) The landing gear selector valve supplies up pressure when the control lever for the\nlanding gear is moved to the UP position.\n(b) Up pressure goes to the transfer cylinder and moves the piston in the transfer cylinder to\nthe down side. This gives a time delay to let the downlock actuator unlock the downlock\nstrut.\n(c) Up pressure goes to the downlock actuator. The downlock actuator extends and unlocks\nthe downlock strut.\n(d) When the piston in the transfer cylinder gets to the end of the up side, up pressure goes\nto the up side of the main gear actuator. The main gear actuator moves to retract the\ngear.(e) When the ...\n\nFIM Task: 29-30TASK 805\nDescription: ELEC 1 过热灯：灯亮。\nContent: A. Description\n(1) The ELEC 1 OVERHEAT light comes on when the hydraulic fluid temperature in the case drain\nline below the electric motor-driven pump (EMDP) increases to more than normal.\n(2) The hydraulic fluid overheat warning switch in the case drain line monitors the temperature of\nthe EMDP. This overheat warning switch supplies a ground for the amber OVERHEAT light\nwhen the case drain fluid temperature is more than 225 degrees F.\n(3) The hydraulic fluid overheat warning switch for the hydraulic system B is installed directly\nbelow the hydraulic system B EMDP.\nCEA 001-045, 051-054, 060, 073-078, 101-112, 114, 115, 117-148, 151-160, 171-188, 191-194, 206-208,\n211-221, 250-299, 301-399, 401-999\n(4) The EMDP overheat warning switch monitors the temperature of the EMDP electric motor. It is\ninternal to the EMDP and it closes at 235 degrees F (113 degrees C). The EMDP overheat\nwarning switch supplies a ground for the amber OVERHEAT light separate from the hydraulic\nfluid overheat warni...\n\nUser question: 你是谁\n\nPlease provide a specific answer based on the context above.'}], 'model': 'deepseek-chat', 'max_tokens': 2000, 'temperature': 0.2}}
+2025-05-29 20:30:12,865 - DEBUG - connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+2025-05-29 20:30:12,866 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024D4FC54470>
+2025-05-29 20:30:12,866 - DEBUG - send_request_headers.started request=<Request [b'CONNECT']>
+2025-05-29 20:30:12,866 - DEBUG - send_request_headers.complete
+2025-05-29 20:30:12,866 - DEBUG - send_request_body.started request=<Request [b'CONNECT']>
+2025-05-29 20:30:12,866 - DEBUG - send_request_body.complete
+2025-05-29 20:30:12,866 - DEBUG - receive_response_headers.started request=<Request [b'CONNECT']>
+2025-05-29 20:30:12,866 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+2025-05-29 20:30:12,867 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024D4FC50ED0> server_hostname='api.deepseek.com' timeout=5.0
+2025-05-29 20:30:12,996 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024D4FC56840>
+2025-05-29 20:30:12,996 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-29 20:30:12,996 - DEBUG - send_request_headers.complete
+2025-05-29 20:30:12,997 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-29 20:30:12,997 - DEBUG - send_request_body.complete
+2025-05-29 20:30:12,997 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-29 20:30:13,077 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 29 May 2025 12:30:12 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Set-Cookie', b'HWWAFSESID=398a879e363ed7e641; path=/'), (b'Set-Cookie', b'HWWAFSESTIME=1748521811761; path=/'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'f99ff59b784004f5dcf943090f991dac'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'CW'), (b'Content-Encoding', b'gzip')])
+2025-05-29 20:30:13,078 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 20:30:13,078 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-29 20:30:22,301 - DEBUG - receive_response_body.complete
+2025-05-29 20:30:22,301 - DEBUG - response_closed.started
+2025-05-29 20:30:22,301 - DEBUG - response_closed.complete
+2025-05-29 20:30:22,301 - DEBUG - HTTP Request: POST https://api.deepseek.com/chat/completions "200 OK"
+2025-05-29 20:30:22,303 - DEBUG - DeepSeek API 返回答案，长度: 268
+2025-05-29 20:30:22,303 - DEBUG - 开始翻译和格式化，目标语言: zh
+2025-05-29 20:30:22,303 - DEBUG - 原始文本长度: 268
+2025-05-29 20:30:22,303 - DEBUG - 简化后文本长度: 268
+2025-05-29 20:30:22,303 - DEBUG - 调用DeepSeek API进行翻译
+2025-05-29 20:30:22,307 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a professional aircraft maintenance document translator.\n                    \n                    Keep the translation simple and directly usable:\n                    1. Maintain paragraph structure but don't worry about complex markdown\n                    2. Only use ** for important warnings or critical information\n                    3. Keep technical terms in their original form, especially:\n                       - System names like CDS, BITE, DEU, CPU \n                       - Error codes like 293 130 00\n                       - Task numbers like 31-62-801"}, {'role': 'user', 'content': 'Translate this aircraft maintenance text from English to 中文.\n                    \n                    IMPORTANT: Keep all technical terms, numbers, error codes and task references in their original form.\n                    \n                    Text to translate:\n                    The provided context does not contain information to answer the question "你是谁" (Who are you). The context only includes maintenance manual excerpts related to landing gear and electrical system overheating. \n\nSource: N/A (No relevant information in provided documents)'}], 'model': 'deepseek-chat', 'max_tokens': 2000, 'temperature': 0.1}}
+2025-05-29 20:30:22,307 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-05-29 20:30:22,307 - DEBUG - send_request_headers.complete
+2025-05-29 20:30:22,307 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-05-29 20:30:22,308 - DEBUG - send_request_body.complete
+2025-05-29 20:30:22,308 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-05-29 20:30:22,391 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 29 May 2025 12:30:21 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'access-control-allow-credentials', b'true'), (b'x-ds-trace-id', b'6281840a339f7f2b96c8b15bae2902d3'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'CW'), (b'Content-Encoding', b'gzip')])
+2025-05-29 20:30:22,391 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 20:30:22,391 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-05-29 20:30:28,407 - DEBUG - receive_response_body.complete
+2025-05-29 20:30:28,407 - DEBUG - response_closed.started
+2025-05-29 20:30:28,408 - DEBUG - response_closed.complete
+2025-05-29 20:30:28,408 - DEBUG - HTTP Request: POST https://api.deepseek.com/chat/completions "200 OK"
+2025-05-29 20:30:28,409 - DEBUG - 翻译完成，文本长度: 71
+2025-05-29 20:30:28,409 - DEBUG - 翻译和格式化完成，最终答案长度: 71
+2025-05-29 20:30:28,415 - DEBUG - 从RAG pipeline获取的原始响应长度: 71
+2025-05-29 20:30:28,415 - DEBUG - 响应前100字符: 所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。
+
+来源：无（提供的文件中无相关信息）...
+2025-05-29 20:30:28,415 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:30:28,415 - DEBUG - 响应原始内容:
+所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。
+
+来源：无（提供的文件中无相关信息）
+2025-05-29 20:30:28,415 - WARNING - 响应可能缺少Markdown格式，尝试增强格式化
+2025-05-29 20:30:28,415 - DEBUG - 增强格式化后的文本: 所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。
+
+来源：无（提供的文件中无相关信息）...
+2025-05-29 20:30:28,415 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:30:28,416 - DEBUG - 预处理前的原始Markdown文本长度: 71
+2025-05-29 20:30:28,416 - DEBUG - 预处理前的原始Markdown文本:
+所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。
+
+来源：无（提供的文件中无相关信息）
+2025-05-29 20:30:28,416 - DEBUG - 预处理后的文本长度: 71
+2025-05-29 20:30:28,416 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=False
+2025-05-29 20:30:28,416 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:30:28,416 - DEBUG - 开始流式输出...
+2025-05-29 20:30:28,416 - DEBUG - 流式输出: 总行数 = 3
+2025-05-29 20:30:28,416 - DEBUG - 流式输出: 生成段落(长度=52)
+2025-05-29 20:30:28,497 - DEBUG - 流式输出: 生成最后段落(长度=18)
+2025-05-29 20:30:28,497 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:30:28,498 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:30:28,499 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:30:28,499 - DEBUG - 会话中的消息数量: 9
+2025-05-29 20:30:28,501 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:30:28,501 - DEBUG - 添加到历史的消息长度: 71
+2025-05-29 20:30:28,501 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:30:28,503 - DEBUG - 更新前会话消息数量: 9
+2025-05-29 20:30:28,503 - DEBUG - 会话更新完成，当前消息数: 10
+2025-05-29 20:30:28,507 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748521828.json
+2025-05-29 20:30:28,507 - DEBUG - 会话最后消息摘要: 所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。
+
+来源：无（提供的文件中无相关信息）
+2025-05-29 20:30:28,507 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:30:28,507 - WARNING - 消息 #9 可能缺少Markdown格式 (长度=71)
+2025-05-29 20:30:28,507 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:34:08,502 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522048.json
+2025-05-29 20:34:08,809 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:34:12,659 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522052.json
+2025-05-29 20:34:12,934 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:34:37,215 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522077.json
+2025-05-29 20:34:37,459 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:34:39,353 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:34:41,279 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522081.json
+2025-05-29 20:34:41,493 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:34:50,464 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:35:00,478 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:35:00,483 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522100.json
+2025-05-29 20:35:00,487 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:35:00,488 - DEBUG - 用户指定输出语言: 中文
+2025-05-29 20:35:00,488 - DEBUG - 最终输出语言确定为: zh
+2025-05-29 20:35:00,494 - DEBUG - 从RAG pipeline获取的原始响应长度: 427
+2025-05-29 20:35:00,495 - DEBUG - 响应前100字符: 根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- ...
+2025-05-29 20:35:00,495 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:35:00,495 - DEBUG - 响应原始内容:
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 812）
+
+2. 若泄漏发生在油箱通气管路：
+- 可能原因包括：
+  * 油箱过满（特别是温度变化后）
+  * 释压阀故障
+  * 油量传感器/指示器问题
+  * 油箱增压系统故障
+  * 液压油串油
+- 需检查A系统和B系统油箱油量
+（来源：FIM Task 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:00,495 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:35:00,496 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:35:00,496 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:00,496 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:35:00,496 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:35:00,496 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:35:00,496 - DEBUG - 开始流式输出...
+2025-05-29 20:35:00,496 - DEBUG - 流式输出: 总行数 = 24
+2025-05-29 20:35:00,496 - DEBUG - 流式输出: 生成段落(长度=26)
+2025-05-29 20:35:00,580 - DEBUG - 流式输出: 在行 2 检测到段落边界: 1. 针对一般液压油泄漏情况：
+2025-05-29 20:35:00,580 - DEBUG - 流式输出: 生成段落(长度=125)
+2025-05-29 20:35:00,661 - DEBUG - 流式输出: 在行 10 检测到段落边界:   * 油箱过满（特别是温度变化后）
+2025-05-29 20:35:00,661 - DEBUG - 流式输出: 生成段落(长度=27)
+2025-05-29 20:35:00,742 - DEBUG - 流式输出: 在行 11 检测到段落边界:   * 释压阀故障
+2025-05-29 20:35:00,742 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:35:00,823 - DEBUG - 流式输出: 在行 12 检测到段落边界:   * 油量传感器/指示器问题
+2025-05-29 20:35:00,823 - DEBUG - 流式输出: 生成段落(长度=9)
+2025-05-29 20:35:00,905 - DEBUG - 流式输出: 在行 13 检测到段落边界:   * 油箱增压系统故障
+2025-05-29 20:35:00,905 - DEBUG - 流式输出: 生成段落(长度=15)
+2025-05-29 20:35:00,987 - DEBUG - 流式输出: 在行 14 检测到段落边界:   * 液压油串油
+2025-05-29 20:35:00,987 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:35:01,068 - DEBUG - 流式输出: 生成段落(长度=54)
+2025-05-29 20:35:01,149 - DEBUG - 流式输出: 生成段落(长度=79)
+2025-05-29 20:35:01,231 - DEBUG - 流式输出: 在行 23 检测到段落边界: **首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:01,231 - DEBUG - 流式输出: 生成最后段落(长度=51)
+2025-05-29 20:35:01,233 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:35:01,235 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:35:01,235 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:35:01,235 - DEBUG - 会话中的消息数量: 1
+2025-05-29 20:35:01,237 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:35:01,237 - DEBUG - 添加到历史的消息长度: 427
+2025-05-29 20:35:01,237 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:35:01,238 - DEBUG - 更新前会话消息数量: 1
+2025-05-29 20:35:01,238 - DEBUG - 会话更新完成，当前消息数: 2
+2025-05-29 20:35:01,243 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522101.json
+2025-05-29 20:35:01,244 - DEBUG - 会话最后消息摘要: 根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- ...
+2025-05-29 20:35:01,244 - DEBUG - 会话历史中的所有消息格式一致
+2025-05-29 20:35:07,714 - DEBUG - 开始显示历史消息: 消息数量=2
+2025-05-29 20:35:07,714 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:07,715 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:07,715 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:07,717 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:07,718 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:07,718 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:35:07,718 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:07,718 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:35:07,718 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:35:07,725 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:07,726 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:16,045 - DEBUG - 开始显示历史消息: 消息数量=2
+2025-05-29 20:35:16,045 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:16,046 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:16,046 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:16,046 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:16,047 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:16,048 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:35:16,048 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:16,048 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:35:16,048 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:35:16,048 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:16,048 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:16,056 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522116.json
+2025-05-29 20:35:16,058 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:35:16,058 - DEBUG - 用户指定输出语言: 英文
+2025-05-29 20:35:16,058 - DEBUG - 最终输出语言确定为: en
+2025-05-29 20:35:16,070 - DEBUG - 从RAG pipeline获取的原始响应长度: 1058
+2025-05-29 20:35:16,070 - DEBUG - 响应前100字符: Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For gene...
+2025-05-29 20:35:16,071 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:35:16,071 - DEBUG - 响应原始内容:
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external leakage check (AMM TASK 29-00-00-790-801)
+- Check for damaged or worn parts (FIM 29-10TASK 812)
+- You can feel for hot tubes/actuators or listen for leaks to locate problematic components
+
+2. For leaks from reservoir vent lines:
+- Possible causes include overfilling, relief valve issues, or quantity transmitter problems (FIM 29-10TASK 805)
+- Check reservoir fluid levels (should not exceed full mark)
+- Note that large temperature changes can cause overflow if reservoirs are filled in cold conditions
+
+3. For system-to-system fluid transfer:
+- This can occur during brake operations (FIM 29-10TASK 806)
+- Follow normal procedures in Flight Operations Manual to prevent
+
+The documents recommend starting with the external leakage check procedure to isolate the leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:35:16,071 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:35:16,072 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:35:16,072 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:35:16,072 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:35:16,072 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:35:16,072 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:35:16,072 - DEBUG - 开始流式输出...
+2025-05-29 20:35:16,073 - DEBUG - 流式输出: 总行数 = 19
+2025-05-29 20:35:16,073 - DEBUG - 流式输出: 生成段落(长度=87)
+2025-05-29 20:35:16,154 - DEBUG - 流式输出: 在行 2 检测到段落边界: 1. For general hydraulic oil leaks:
+2025-05-29 20:35:16,154 - DEBUG - 流式输出: 生成段落(长度=245)
+2025-05-29 20:35:16,239 - DEBUG - 流式输出: 生成段落(长度=315)
+2025-05-29 20:35:16,320 - DEBUG - 流式输出: 生成段落(长度=167)
+2025-05-29 20:35:16,401 - DEBUG - 流式输出: 生成段落(长度=192)
+2025-05-29 20:35:16,483 - DEBUG - 流式输出: 生成最后段落(长度=46)
+2025-05-29 20:35:16,484 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:35:16,485 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:35:16,485 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:35:16,485 - DEBUG - 会话中的消息数量: 3
+2025-05-29 20:35:16,490 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:35:16,490 - DEBUG - 添加到历史的消息长度: 1058
+2025-05-29 20:35:16,490 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:35:16,490 - DEBUG - 更新前会话消息数量: 3
+2025-05-29 20:35:16,490 - DEBUG - 会话更新完成，当前消息数: 4
+2025-05-29 20:35:16,495 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522116.json
+2025-05-29 20:35:16,495 - DEBUG - 会话最后消息摘要: Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For gene...
+2025-05-29 20:35:16,495 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:35:16,495 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:35:41,045 - DEBUG - 开始显示历史消息: 消息数量=4
+2025-05-29 20:35:41,045 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:41,045 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:41,046 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:41,048 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:41,048 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:41,048 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:35:41,048 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:41,048 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:35:41,048 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:35:41,049 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:41,049 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:41,051 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:41,052 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:41,053 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:41,053 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:41,054 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:41,054 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:35:41,054 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:35:41,054 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:35:41,054 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:35:41,054 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:41,054 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:41,066 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522141.json
+2025-05-29 20:35:41,427 - DEBUG - 检测到查询语言: en
+2025-05-29 20:35:41,428 - DEBUG - 用户指定输出语言: 英文
+2025-05-29 20:35:41,428 - DEBUG - 最终输出语言确定为: en
+2025-05-29 20:35:41,429 - DEBUG - 开始翻译和格式化，目标语言: en
+2025-05-29 20:35:41,430 - DEBUG - 原始文本长度: 1041
+2025-05-29 20:35:41,430 - DEBUG - 目标语言是英文，跳过翻译，只进行简单格式化
+2025-05-29 20:35:41,430 - DEBUG - 英文结果格式化完成，长度: 1041
+2025-05-29 20:35:41,430 - DEBUG - 从RAG pipeline获取的原始响应长度: 1041
+2025-05-29 20:35:41,430 - DEBUG - 响应前100字符: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:35:41,430 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:35:41,430 - DEBUG - 响应原始内容:
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) The indicator shows the fluid quantity on the mechanical gage on the reservoir in the main
+landing gear wheel well.
+(3) The transmitter sends signal to the display electronic units (DEUs). The fluid quantity shows on
+the engine display.
+B. Possible Causes
+(1) Hydraulic fluid servicing
+(2) Failure from the CDU BITE procedure
+C. Related Data
+(1) (SSM 29-31-11)
+(2) (WDM 29-31-11)
+D. Fault Isolation Procedure
+(1) Fill the applicable hydraulic reservoir. To fill it, do this task: Hydraulic Reservoir Servicing, AMM
+TASK 12-12-00-610-801.
+(a) If the applicable hydraulic fluid quantity indicator shows F (100%), then you corrected the
+fault.
+(b) If the applicable hydraulic fluid quantity indicator does not show F (100%), then continue.
+(2) Do this task: CDS BITE Procedure, 31-62 TASK 801.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:35:41,430 - WARNING - 响应可能缺少Markdown格式，尝试增强格式化
+2025-05-29 20:35:41,430 - DEBUG - 增强格式化后的文本: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:35:41,430 - DEBUG - 检索到 1 个来源文档
+2025-05-29 20:35:41,431 - DEBUG - 预处理前的原始Markdown文本长度: 1041
+2025-05-29 20:35:41,431 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+Do this task: CDS BITE Procedure, 31-62 TASK 801.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:35:41,431 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:35:41,431 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:35:41,431 - DEBUG - 预处理后的文本长度: 1090
+2025-05-29 20:35:41,431 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=False
+2025-05-29 20:35:41,431 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:35:41,431 - DEBUG - 开始流式输出...
+2025-05-29 20:35:41,432 - DEBUG - 流式输出: 总行数 = 22
+2025-05-29 20:35:41,432 - DEBUG - 流式输出: 生成最后段落(长度=1090)
+2025-05-29 20:35:41,432 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:35:41,433 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:35:41,433 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:35:41,433 - DEBUG - 会话中的消息数量: 5
+2025-05-29 20:35:41,435 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:35:41,435 - DEBUG - 添加到历史的消息长度: 1090
+2025-05-29 20:35:41,435 - DEBUG - 添加到历史的来源数量: 1
+2025-05-29 20:35:41,435 - DEBUG - 更新前会话消息数量: 5
+2025-05-29 20:35:41,435 - DEBUG - 会话更新完成，当前消息数: 6
+2025-05-29 20:35:41,439 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522141.json
+2025-05-29 20:35:41,439 - DEBUG - 会话最后消息摘要: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:35:41,439 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:35:41,439 - WARNING - 消息 #5 可能缺少Markdown格式 (长度=1090)
+2025-05-29 20:35:41,439 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:35:53,137 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:35:53,137 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:53,137 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:53,137 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:53,137 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:53,138 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:53,139 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:35:53,139 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:35:53,139 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:35:53,139 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:35:53,140 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:53,140 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:53,143 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:53,143 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:53,144 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:53,144 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:53,144 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:35:53,144 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:35:53,144 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:35:53,145 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:35:53,145 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:35:53,146 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:53,146 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:35:53,150 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:35:53,151 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:35:53,152 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:35:53,153 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:35:53,153 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:35:53,153 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:35:53,153 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:35:53,154 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:35:53,154 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:35:53,154 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:35:53,154 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:35:53,154 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:35:53,155 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:35:53,155 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:36:05,301 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:36:05,301 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:36:05,303 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:36:05,303 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:36:05,304 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:36:05,304 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:36:05,304 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:36:05,304 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:36:05,304 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:36:05,304 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:36:05,304 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:36:05,304 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:36:05,307 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:36:05,308 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:36:05,308 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:36:05,312 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:36:05,312 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:36:05,312 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:36:05,312 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:36:05,312 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:36:05,312 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:36:05,316 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:36:05,321 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:36:05,326 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:36:05,326 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:36:05,326 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:36:05,327 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:36:05,327 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:36:05,327 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:36:05,327 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:36:05,327 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:36:05,327 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:36:05,327 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:36:05,327 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:36:05,328 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:36:05,328 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:36:05,329 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:36:05,336 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522165.json
+2025-05-29 20:36:05,344 - DEBUG - 从RAG pipeline获取的原始响应长度: 1938
+2025-05-29 20:36:05,344 - DEBUG - 响应前100字符: ![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：...
+2025-05-29 20:36:05,344 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:36:05,344 - DEBUG - 响应原始内容:
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备**
+
+(1) 点爆管保护盖 M83723/60 114 AN 或 AC
+
+**B. 参考资料**
+
+| 参考号        | 标题                                 |
+| ------------- | ------------------------------------ |
+| 204012 P/B 201 | 静电敏感设备维护规程                 |
+
+**C. 区域位置**
+
+| 区域 | 位置说明                               |
+| ---- | -------------------------------------- |
+|      | **静电敏感设备维护规程** |
+| 216  | 左主起落架舱                           |
+
+**D. 拆卸发动机灭火瓶**
+
+**子任务 26-21-11-864-002**
+
+(1) 打开P62负载控制中心面板上的这些断路器，并挂上“禁止闭合”标牌：
+    (a) 右发动机灭火瓶 (EXTINGUISHER BOTTLES RIGHT)
+    (b) 左发动机灭火瓶 (EXTINGUISHER BOTTLES LEFT)
+    (c) 右灭火瓶 (EXTINGUISHER BOTTLE RIGHT)
+    (d) 左灭火瓶 (EXTINGUISHER BOTTLE LEFT)
+    (e) APU灭火瓶 (EXTINGUISHER BOTTLE APU)
+
+**子任务 26-21-11-864-003**
+
+(2) 打开P63面板上的这些断路器：
+    (a) 主指示灯调光汇流条-电瓶 (INDICATOR MASTER DIM BUS BAT)
+    (b) 主指示灯调光汇流条-1号直流 (INDICATOR MASTER DIM BUS NO.1 DC)
+    (c) 主指示灯调光汇流条-2号直流 (INDICATOR MASTER DIM BUS NO. 2 DC)
+    (d) 指示灯区域1 (INDICATOR SECT 1)
+    (e) 指示灯区域2 (INDICATOR SECT 2)
+    (f) 指示灯区域3 (INDICATOR SECT 3)
+    (g) 指示灯区域4 (INDICATOR SECT 4)
+    (h) 指示灯区域5 (INDICATOR SECT 5)
+    (i) 指示灯区域6 (INDICATOR SECT 6)
+    (j) 调光与测试 (DIM & TEST)
+
+**警告：在执行静电敏感设备的操作程序之前，请勿触摸点爆管。静电释放可能导致灭火瓶突然释放其内含物，从而造成人员受伤和设备损坏。**
+
+(3) 在接触点爆管之前，请执行静电敏感设备的操作程序（参考页面模块 204012/201）。
+
+**子任务 26-21-11-864-004**
+
+(4) 在灭火瓶释放出口处，断开电气接头 D582 和 D1322（左瓶）或 D584 和 D1324（右瓶）。
+
+**子任务 26-21-11-424-064**
+
+**警告：务必在灭火瓶点爆管上安装保护盖。如果未安装保护盖，灭火瓶可能突然释放其内含物，导致人员受伤。**
+
+(5) 在每个点爆管接头上安装保护盖。
+
+**子任务 26-21-11-864-007**
+
+(6) 从压力表上断开电气接头 D586（左瓶）或 D588（右瓶）。
+
+**子任务 26-21-11-034-008**
+
+(7) 从灭火瓶释放出口断开两条释放管路。
+
+**子任务 26-21-11-420-001**
+
+(8) 在每个释放口上安装保护盖。
+
+**子任务 26-21-11-420-002**
+
+(9) 在每根释放管上安装保护盖。
+
+**子任务 26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:36:05,344 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:36:05,344 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:36:05,345 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:36:05,345 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:36:05,345 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:36:05,345 - DEBUG - 开始流式输出...
+2025-05-29 20:36:05,345 - DEBUG - 流式输出: 总行数 = 95
+2025-05-29 20:36:05,345 - DEBUG - 流式输出: 生成段落(长度=65)
+2025-05-29 20:36:05,427 - DEBUG - 流式输出: 生成段落(长度=34)
+2025-05-29 20:36:05,508 - DEBUG - 流式输出: 生成段落(长度=4)
+2025-05-29 20:36:05,590 - DEBUG - 流式输出: 在行 6 检测到段落边界: **发动机灭火瓶拆卸**
+2025-05-29 20:36:05,590 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:36:05,673 - DEBUG - 流式输出: 在行 8 检测到段落边界: **注意：** 此程序为计划性维护任务。
+2025-05-29 20:36:05,673 - DEBUG - 流式输出: 生成段落(长度=20)
+2025-05-29 20:36:05,754 - DEBUG - 流式输出: 在行 10 检测到段落边界: **A. 设备**
+2025-05-29 20:36:05,754 - DEBUG - 流式输出: 生成段落(长度=9)
+2025-05-29 20:36:05,835 - DEBUG - 流式输出: 生成段落(长度=33)
+2025-05-29 20:36:05,917 - DEBUG - 流式输出: 在行 14 检测到段落边界: **B. 参考资料**
+2025-05-29 20:36:05,917 - DEBUG - 流式输出: 生成段落(长度=11)
+2025-05-29 20:36:05,999 - DEBUG - 流式输出: 生成段落(长度=157)
+2025-05-29 20:36:06,080 - DEBUG - 流式输出: 在行 20 检测到段落边界: **C. 区域位置**
+2025-05-29 20:36:06,080 - DEBUG - 流式输出: 生成段落(长度=11)
+2025-05-29 20:36:06,162 - DEBUG - 流式输出: 生成段落(长度=164)
+2025-05-29 20:36:06,243 - DEBUG - 流式输出: 在行 27 检测到段落边界: **D. 拆卸发动机灭火瓶**
+2025-05-29 20:36:06,243 - DEBUG - 流式输出: 生成段落(长度=15)
+2025-05-29 20:36:06,324 - DEBUG - 流式输出: 在行 29 检测到段落边界: **子任务 26-21-11-864-002**
+2025-05-29 20:36:06,324 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:06,405 - DEBUG - 流式输出: 生成段落(长度=249)
+2025-05-29 20:36:06,487 - DEBUG - 流式输出: 在行 38 检测到段落边界: **子任务 26-21-11-864-003**
+2025-05-29 20:36:06,488 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:06,570 - DEBUG - 流式输出: 生成段落(长度=420)
+2025-05-29 20:36:06,653 - DEBUG - 流式输出: 在行 52 检测到段落边界: **警告：在执行静电敏感设备的操作程序之前，请勿触摸点爆管。静电释放可能导致灭火瓶突然释放其内含物，从而造成人员受伤和设备损坏。**
+2025-05-29 20:36:06,653 - DEBUG - 流式输出: 生成段落(长度=66)
+2025-05-29 20:36:06,734 - DEBUG - 流式输出: 生成段落(长度=48)
+2025-05-29 20:36:06,815 - DEBUG - 流式输出: 在行 56 检测到段落边界: **子任务 26-21-11-864-004**
+2025-05-29 20:36:06,815 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:06,897 - DEBUG - 流式输出: 生成段落(长度=57)
+2025-05-29 20:36:06,979 - DEBUG - 流式输出: 在行 60 检测到段落边界: **子任务 26-21-11-424-064**
+2025-05-29 20:36:06,979 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,061 - DEBUG - 流式输出: 在行 62 检测到段落边界: **警告：务必在灭火瓶点爆管上安装保护盖。如果未安装保护盖，灭火瓶可能突然释放其内含物，导致人员受伤。**
+2025-05-29 20:36:07,061 - DEBUG - 流式输出: 生成段落(长度=53)
+2025-05-29 20:36:07,142 - DEBUG - 流式输出: 生成段落(长度=20)
+2025-05-29 20:36:07,224 - DEBUG - 流式输出: 在行 66 检测到段落边界: **子任务 26-21-11-864-007**
+2025-05-29 20:36:07,224 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,305 - DEBUG - 流式输出: 生成段落(长度=36)
+2025-05-29 20:36:07,387 - DEBUG - 流式输出: 在行 70 检测到段落边界: **子任务 26-21-11-034-008**
+2025-05-29 20:36:07,387 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,469 - DEBUG - 流式输出: 生成段落(长度=22)
+2025-05-29 20:36:07,552 - DEBUG - 流式输出: 在行 74 检测到段落边界: **子任务 26-21-11-420-001**
+2025-05-29 20:36:07,552 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,633 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:36:07,715 - DEBUG - 流式输出: 在行 78 检测到段落边界: **子任务 26-21-11-420-002**
+2025-05-29 20:36:07,715 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,799 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:36:07,880 - DEBUG - 流式输出: 在行 82 检测到段落边界: **子任务 26-21-11-034-009**
+2025-05-29 20:36:07,880 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:36:07,960 - DEBUG - 流式输出: 生成段落(长度=23)
+2025-05-29 20:36:08,043 - DEBUG - 流式输出: 生成段落(长度=4)
+2025-05-29 20:36:08,124 - DEBUG - 流式输出: 在行 88 检测到段落边界: **来源：AMM手册**
+2025-05-29 20:36:08,124 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:36:08,205 - DEBUG - 流式输出: 在行 90 检测到段落边界: * 章节 26-21-发动机灭火系统 的子章节
+2025-05-29 20:36:08,205 - DEBUG - 流式输出: 在行 91 检测到段落边界: * 主题 26-21-11-发动机灭火瓶 的子章节
+2025-05-29 20:36:08,205 - DEBUG - 流式输出: 生成段落(长度=23)
+2025-05-29 20:36:08,287 - DEBUG - 流式输出: 在行 92 检测到段落边界: * 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+2025-05-29 20:36:08,287 - DEBUG - 流式输出: 生成段落(长度=25)
+2025-05-29 20:36:08,368 - DEBUG - 流式输出: 生成段落(长度=32)
+2025-05-29 20:36:08,451 - DEBUG - 流式输出: 生成最后段落(长度=4)
+2025-05-29 20:36:08,453 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:36:08,454 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:36:08,454 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:36:08,455 - DEBUG - 会话中的消息数量: 7
+2025-05-29 20:36:08,455 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:36:08,455 - DEBUG - 添加到历史的消息长度: 1938
+2025-05-29 20:36:08,455 - DEBUG - 添加到历史的来源数量: 0
+2025-05-29 20:36:08,455 - DEBUG - 更新前会话消息数量: 7
+2025-05-29 20:36:08,455 - DEBUG - 会话更新完成，当前消息数: 8
+2025-05-29 20:36:08,462 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522168.json
+2025-05-29 20:36:08,463 - DEBUG - 会话最后消息摘要: ![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：...
+2025-05-29 20:36:08,464 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:36:08,464 - WARNING - 消息 #5 可能缺少Markdown格式 (长度=1090)
+2025-05-29 20:36:08,464 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:37:23,522 - DEBUG - 开始显示历史消息: 消息数量=8
+2025-05-29 20:37:23,523 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:37:23,523 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:37:23,523 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:37:23,524 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:37:23,524 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:37:23,525 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:37:23,525 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:37:23,525 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:37:23,525 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:37:23,525 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:37:23,525 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:37:23,528 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:37:23,528 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:37:23,528 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:37:23,529 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:37:23,529 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:37:23,529 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:37:23,529 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:37:23,529 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:37:23,530 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:37:23,531 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:37:23,531 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:37:23,534 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:37:23,534 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:37:23,535 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:37:23,535 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:37:23,535 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:37:23,535 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:37:23,535 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:37:23,536 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:37:23,536 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:37:23,536 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:37:23,536 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:37:23,536 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:37:23,537 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:37:23,537 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:37:23,539 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:37:23,539 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:37:23,539 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:37:23,540 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:37:23,540 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:37:23,540 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:37:23,540 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:37:23,540 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:37:23,540 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1938, 新长度=1938)
+2025-05-29 20:37:23,541 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:38:37,495 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522317.json
+2025-05-29 20:38:37,837 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:38:38,845 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522318.json
+2025-05-29 20:38:39,161 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:39:50,765 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522390.json
+2025-05-29 20:39:51,077 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:39:53,259 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:39:54,102 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:39:55,904 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522395.json
+2025-05-29 20:39:56,173 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:40:05,082 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:40:13,911 - DEBUG - 开始显示历史消息: 消息数量=0
+2025-05-29 20:40:13,915 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522413.json
+2025-05-29 20:40:13,918 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:40:13,918 - DEBUG - 用户指定输出语言: 中文
+2025-05-29 20:40:13,919 - DEBUG - 最终输出语言确定为: zh
+2025-05-29 20:40:13,923 - DEBUG - 从RAG pipeline获取的原始响应长度: 427
+2025-05-29 20:40:13,923 - DEBUG - 响应前100字符: 根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- ...
+2025-05-29 20:40:13,923 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:40:13,923 - DEBUG - 响应原始内容:
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 812）
+
+2. 若泄漏发生在油箱通气管路：
+- 可能原因包括：
+  * 油箱过满（特别是温度变化后）
+  * 释压阀故障
+  * 油量传感器/指示器问题
+  * 油箱增压系统故障
+  * 液压油串油
+- 需检查A系统和B系统油箱油量
+（来源：FIM Task 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:13,923 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:40:13,924 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:40:13,924 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:13,924 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:40:13,924 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:40:13,924 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:40:13,924 - DEBUG - 开始流式输出...
+2025-05-29 20:40:13,925 - DEBUG - 流式输出: 总行数 = 24
+2025-05-29 20:40:13,925 - DEBUG - 流式输出: 生成段落(长度=26)
+2025-05-29 20:40:14,015 - DEBUG - 流式输出: 在行 2 检测到段落边界: 1. 针对一般液压油泄漏情况：
+2025-05-29 20:40:14,015 - DEBUG - 流式输出: 生成段落(长度=125)
+2025-05-29 20:40:14,096 - DEBUG - 流式输出: 在行 10 检测到段落边界:   * 油箱过满（特别是温度变化后）
+2025-05-29 20:40:14,096 - DEBUG - 流式输出: 生成段落(长度=27)
+2025-05-29 20:40:14,178 - DEBUG - 流式输出: 在行 11 检测到段落边界:   * 释压阀故障
+2025-05-29 20:40:14,178 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:40:14,261 - DEBUG - 流式输出: 在行 12 检测到段落边界:   * 油量传感器/指示器问题
+2025-05-29 20:40:14,261 - DEBUG - 流式输出: 生成段落(长度=9)
+2025-05-29 20:40:14,343 - DEBUG - 流式输出: 在行 13 检测到段落边界:   * 油箱增压系统故障
+2025-05-29 20:40:14,343 - DEBUG - 流式输出: 生成段落(长度=15)
+2025-05-29 20:40:14,424 - DEBUG - 流式输出: 在行 14 检测到段落边界:   * 液压油串油
+2025-05-29 20:40:14,424 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:40:14,505 - DEBUG - 流式输出: 生成段落(长度=54)
+2025-05-29 20:40:14,586 - DEBUG - 流式输出: 生成段落(长度=79)
+2025-05-29 20:40:14,668 - DEBUG - 流式输出: 在行 23 检测到段落边界: **首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:14,668 - DEBUG - 流式输出: 生成最后段落(长度=51)
+2025-05-29 20:40:14,672 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:40:14,673 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:40:14,674 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:40:14,674 - DEBUG - 会话中的消息数量: 1
+2025-05-29 20:40:14,677 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:40:14,678 - DEBUG - 添加到历史的消息长度: 427
+2025-05-29 20:40:14,678 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:40:14,678 - DEBUG - 更新前会话消息数量: 1
+2025-05-29 20:40:14,678 - DEBUG - 会话更新完成，当前消息数: 2
+2025-05-29 20:40:14,688 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522414.json
+2025-05-29 20:40:14,689 - DEBUG - 会话最后消息摘要: 根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- ...
+2025-05-29 20:40:14,689 - DEBUG - 会话历史中的所有消息格式一致
+2025-05-29 20:40:19,651 - DEBUG - 开始显示历史消息: 消息数量=2
+2025-05-29 20:40:19,651 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:19,652 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:19,652 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:19,652 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:19,653 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:19,653 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:40:19,653 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:19,653 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:40:19,653 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:40:19,654 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:19,654 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:26,602 - DEBUG - 开始显示历史消息: 消息数量=2
+2025-05-29 20:40:26,603 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:26,603 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:26,603 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:26,604 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:26,604 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:26,604 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:40:26,604 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:26,604 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:40:26,604 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:40:26,605 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:26,605 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:26,614 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522426.json
+2025-05-29 20:40:26,616 - DEBUG - 检测到查询语言: zh
+2025-05-29 20:40:26,616 - DEBUG - 用户指定输出语言: 英文
+2025-05-29 20:40:26,617 - DEBUG - 最终输出语言确定为: en
+2025-05-29 20:40:26,621 - DEBUG - 从RAG pipeline获取的原始响应长度: 1058
+2025-05-29 20:40:26,621 - DEBUG - 响应前100字符: Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For gene...
+2025-05-29 20:40:26,621 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:40:26,621 - DEBUG - 响应原始内容:
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external leakage check (AMM TASK 29-00-00-790-801)
+- Check for damaged or worn parts (FIM 29-10TASK 812)
+- You can feel for hot tubes/actuators or listen for leaks to locate problematic components
+
+2. For leaks from reservoir vent lines:
+- Possible causes include overfilling, relief valve issues, or quantity transmitter problems (FIM 29-10TASK 805)
+- Check reservoir fluid levels (should not exceed full mark)
+- Note that large temperature changes can cause overflow if reservoirs are filled in cold conditions
+
+3. For system-to-system fluid transfer:
+- This can occur during brake operations (FIM 29-10TASK 806)
+- Follow normal procedures in Flight Operations Manual to prevent
+
+The documents recommend starting with the external leakage check procedure to isolate the leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:40:26,621 - DEBUG - 检索到 5 个来源文档
+2025-05-29 20:40:26,622 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:40:26,622 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:40:26,623 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:40:26,623 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:40:26,623 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:40:26,623 - DEBUG - 开始流式输出...
+2025-05-29 20:40:26,623 - DEBUG - 流式输出: 总行数 = 19
+2025-05-29 20:40:26,623 - DEBUG - 流式输出: 生成段落(长度=87)
+2025-05-29 20:40:26,705 - DEBUG - 流式输出: 在行 2 检测到段落边界: 1. For general hydraulic oil leaks:
+2025-05-29 20:40:26,705 - DEBUG - 流式输出: 生成段落(长度=245)
+2025-05-29 20:40:26,785 - DEBUG - 流式输出: 生成段落(长度=315)
+2025-05-29 20:40:26,866 - DEBUG - 流式输出: 生成段落(长度=167)
+2025-05-29 20:40:26,952 - DEBUG - 流式输出: 生成段落(长度=192)
+2025-05-29 20:40:27,033 - DEBUG - 流式输出: 生成最后段落(长度=46)
+2025-05-29 20:40:27,034 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:40:27,035 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:40:27,035 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:40:27,036 - DEBUG - 会话中的消息数量: 3
+2025-05-29 20:40:27,040 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:40:27,040 - DEBUG - 添加到历史的消息长度: 1058
+2025-05-29 20:40:27,040 - DEBUG - 添加到历史的来源数量: 5
+2025-05-29 20:40:27,040 - DEBUG - 更新前会话消息数量: 3
+2025-05-29 20:40:27,040 - DEBUG - 会话更新完成，当前消息数: 4
+2025-05-29 20:40:27,046 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522427.json
+2025-05-29 20:40:27,046 - DEBUG - 会话最后消息摘要: Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For gene...
+2025-05-29 20:40:27,046 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:40:27,046 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:40:45,840 - DEBUG - 开始显示历史消息: 消息数量=4
+2025-05-29 20:40:45,840 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:45,842 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:45,842 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:45,842 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:45,843 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:45,843 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:40:45,844 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:45,844 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:40:45,844 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:40:45,844 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:45,844 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:45,847 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:45,847 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:45,847 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:45,849 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:45,849 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:45,849 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:40:45,849 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:40:45,849 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:40:45,850 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:40:45,851 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:45,851 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:45,861 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522445.json
+2025-05-29 20:40:45,862 - DEBUG - 检测到查询语言: en
+2025-05-29 20:40:45,863 - DEBUG - 用户指定输出语言: 英文
+2025-05-29 20:40:45,863 - DEBUG - 最终输出语言确定为: en
+2025-05-29 20:40:45,864 - DEBUG - 开始翻译和格式化，目标语言: en
+2025-05-29 20:40:45,864 - DEBUG - 原始文本长度: 1041
+2025-05-29 20:40:45,865 - DEBUG - 目标语言是英文，跳过翻译，只进行简单格式化
+2025-05-29 20:40:45,866 - DEBUG - 英文结果格式化完成，长度: 1041
+2025-05-29 20:40:45,866 - DEBUG - 从RAG pipeline获取的原始响应长度: 1041
+2025-05-29 20:40:45,866 - DEBUG - 响应前100字符: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:40:45,866 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:40:45,866 - DEBUG - 响应原始内容:
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) The indicator shows the fluid quantity on the mechanical gage on the reservoir in the main
+landing gear wheel well.
+(3) The transmitter sends signal to the display electronic units (DEUs). The fluid quantity shows on
+the engine display.
+B. Possible Causes
+(1) Hydraulic fluid servicing
+(2) Failure from the CDU BITE procedure
+C. Related Data
+(1) (SSM 29-31-11)
+(2) (WDM 29-31-11)
+D. Fault Isolation Procedure
+(1) Fill the applicable hydraulic reservoir. To fill it, do this task: Hydraulic Reservoir Servicing, AMM
+TASK 12-12-00-610-801.
+(a) If the applicable hydraulic fluid quantity indicator shows F (100%), then you corrected the
+fault.
+(b) If the applicable hydraulic fluid quantity indicator does not show F (100%), then continue.
+(2) Do this task: CDS BITE Procedure, 31-62 TASK 801.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:40:45,866 - WARNING - 响应可能缺少Markdown格式，尝试增强格式化
+2025-05-29 20:40:45,866 - DEBUG - 增强格式化后的文本: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:40:45,866 - DEBUG - 检索到 1 个来源文档
+2025-05-29 20:40:45,867 - DEBUG - 预处理前的原始Markdown文本长度: 1041
+2025-05-29 20:40:45,868 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+Do this task: CDS BITE Procedure, 31-62 TASK 801.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:40:45,868 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:40:45,868 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:40:45,868 - DEBUG - 预处理后的文本长度: 1090
+2025-05-29 20:40:45,868 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=False
+2025-05-29 20:40:45,869 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:40:45,869 - DEBUG - 开始流式输出...
+2025-05-29 20:40:45,869 - DEBUG - 流式输出: 总行数 = 22
+2025-05-29 20:40:45,869 - DEBUG - 流式输出: 生成最后段落(长度=1090)
+2025-05-29 20:40:45,870 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:40:45,870 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:40:45,870 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:40:45,870 - DEBUG - 会话中的消息数量: 5
+2025-05-29 20:40:45,871 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:40:45,872 - DEBUG - 添加到历史的消息长度: 1090
+2025-05-29 20:40:45,872 - DEBUG - 添加到历史的来源数量: 1
+2025-05-29 20:40:45,872 - DEBUG - 更新前会话消息数量: 5
+2025-05-29 20:40:45,872 - DEBUG - 会话更新完成，当前消息数: 6
+2025-05-29 20:40:45,878 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522445.json
+2025-05-29 20:40:45,878 - DEBUG - 会话最后消息摘要: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:40:45,878 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:40:45,878 - WARNING - 消息 #5 可能缺少Markdown格式 (长度=1090)
+2025-05-29 20:40:45,878 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:40:56,287 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:40:56,288 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:56,289 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:56,289 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:56,289 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:56,289 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:56,289 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:40:56,289 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:40:56,289 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:40:56,289 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:40:56,290 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:56,290 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:56,293 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:56,293 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:56,293 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:56,294 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:56,294 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:40:56,294 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:40:56,294 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:40:56,295 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:40:56,295 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:40:56,296 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:56,296 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:40:56,299 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:40:56,300 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:40:56,301 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:40:56,302 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:40:56,302 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:40:56,302 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:40:56,302 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:40:56,302 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:40:56,303 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:40:56,303 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:40:56,303 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:40:56,303 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:40:56,304 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:40:56,305 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:41:10,154 - DEBUG - 开始显示历史消息: 消息数量=6
+2025-05-29 20:41:10,154 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:41:10,155 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:41:10,155 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:41:10,155 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:41:10,155 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:41:10,155 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:41:10,155 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:41:10,157 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:41:10,157 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:41:10,157 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:41:10,157 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:41:10,160 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:41:10,161 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:41:10,162 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:41:10,162 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:41:10,163 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:41:10,163 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:41:10,163 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:41:10,164 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:41:10,164 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:41:10,165 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:41:10,165 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:41:10,167 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:41:10,168 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:41:10,169 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:41:10,169 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:41:10,169 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:41:10,169 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:41:10,170 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:41:10,170 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:41:10,170 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:41:10,170 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:41:10,170 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:41:10,170 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:41:10,171 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:41:10,171 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:41:10,181 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522470.json
+2025-05-29 20:41:10,190 - DEBUG - 从RAG pipeline获取的原始响应长度: 1938
+2025-05-29 20:41:10,190 - DEBUG - 响应前100字符: ![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：...
+2025-05-29 20:41:10,190 - DEBUG - 响应包含Markdown格式检查: False
+2025-05-29 20:41:10,191 - DEBUG - 响应原始内容:
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备**
+
+(1) 点爆管保护盖 M83723/60 114 AN 或 AC
+
+**B. 参考资料**
+
+| 参考号        | 标题                                 |
+| ------------- | ------------------------------------ |
+| 204012 P/B 201 | 静电敏感设备维护规程                 |
+
+**C. 区域位置**
+
+| 区域 | 位置说明                               |
+| ---- | -------------------------------------- |
+|      | **静电敏感设备维护规程** |
+| 216  | 左主起落架舱                           |
+
+**D. 拆卸发动机灭火瓶**
+
+**子任务 26-21-11-864-002**
+
+(1) 打开P62负载控制中心面板上的这些断路器，并挂上“禁止闭合”标牌：
+    (a) 右发动机灭火瓶 (EXTINGUISHER BOTTLES RIGHT)
+    (b) 左发动机灭火瓶 (EXTINGUISHER BOTTLES LEFT)
+    (c) 右灭火瓶 (EXTINGUISHER BOTTLE RIGHT)
+    (d) 左灭火瓶 (EXTINGUISHER BOTTLE LEFT)
+    (e) APU灭火瓶 (EXTINGUISHER BOTTLE APU)
+
+**子任务 26-21-11-864-003**
+
+(2) 打开P63面板上的这些断路器：
+    (a) 主指示灯调光汇流条-电瓶 (INDICATOR MASTER DIM BUS BAT)
+    (b) 主指示灯调光汇流条-1号直流 (INDICATOR MASTER DIM BUS NO.1 DC)
+    (c) 主指示灯调光汇流条-2号直流 (INDICATOR MASTER DIM BUS NO. 2 DC)
+    (d) 指示灯区域1 (INDICATOR SECT 1)
+    (e) 指示灯区域2 (INDICATOR SECT 2)
+    (f) 指示灯区域3 (INDICATOR SECT 3)
+    (g) 指示灯区域4 (INDICATOR SECT 4)
+    (h) 指示灯区域5 (INDICATOR SECT 5)
+    (i) 指示灯区域6 (INDICATOR SECT 6)
+    (j) 调光与测试 (DIM & TEST)
+
+**警告：在执行静电敏感设备的操作程序之前，请勿触摸点爆管。静电释放可能导致灭火瓶突然释放其内含物，从而造成人员受伤和设备损坏。**
+
+(3) 在接触点爆管之前，请执行静电敏感设备的操作程序（参考页面模块 204012/201）。
+
+**子任务 26-21-11-864-004**
+
+(4) 在灭火瓶释放出口处，断开电气接头 D582 和 D1322（左瓶）或 D584 和 D1324（右瓶）。
+
+**子任务 26-21-11-424-064**
+
+**警告：务必在灭火瓶点爆管上安装保护盖。如果未安装保护盖，灭火瓶可能突然释放其内含物，导致人员受伤。**
+
+(5) 在每个点爆管接头上安装保护盖。
+
+**子任务 26-21-11-864-007**
+
+(6) 从压力表上断开电气接头 D586（左瓶）或 D588（右瓶）。
+
+**子任务 26-21-11-034-008**
+
+(7) 从灭火瓶释放出口断开两条释放管路。
+
+**子任务 26-21-11-420-001**
+
+(8) 在每个释放口上安装保护盖。
+
+**子任务 26-21-11-420-002**
+
+(9) 在每根释放管上安装保护盖。
+
+**子任务 26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:41:10,191 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:41:10,191 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:41:10,191 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:41:10,192 - DEBUG - Markdown元素检查: 标题=False, 代码=False, 列表=True
+2025-05-29 20:41:10,192 - DEBUG - 支持write_stream流式输出: True
+2025-05-29 20:41:10,192 - DEBUG - 开始流式输出...
+2025-05-29 20:41:10,192 - DEBUG - 流式输出: 总行数 = 95
+2025-05-29 20:41:10,193 - DEBUG - 流式输出: 生成段落(长度=65)
+2025-05-29 20:41:10,274 - DEBUG - 流式输出: 生成段落(长度=34)
+2025-05-29 20:41:10,355 - DEBUG - 流式输出: 生成段落(长度=4)
+2025-05-29 20:41:10,436 - DEBUG - 流式输出: 在行 6 检测到段落边界: **发动机灭火瓶拆卸**
+2025-05-29 20:41:10,438 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:41:10,522 - DEBUG - 流式输出: 在行 8 检测到段落边界: **注意：** 此程序为计划性维护任务。
+2025-05-29 20:41:10,522 - DEBUG - 流式输出: 生成段落(长度=20)
+2025-05-29 20:41:10,604 - DEBUG - 流式输出: 在行 10 检测到段落边界: **A. 设备**
+2025-05-29 20:41:10,604 - DEBUG - 流式输出: 生成段落(长度=9)
+2025-05-29 20:41:10,686 - DEBUG - 流式输出: 生成段落(长度=33)
+2025-05-29 20:41:10,767 - DEBUG - 流式输出: 在行 14 检测到段落边界: **B. 参考资料**
+2025-05-29 20:41:10,767 - DEBUG - 流式输出: 生成段落(长度=11)
+2025-05-29 20:41:10,848 - DEBUG - 流式输出: 生成段落(长度=157)
+2025-05-29 20:41:10,929 - DEBUG - 流式输出: 在行 20 检测到段落边界: **C. 区域位置**
+2025-05-29 20:41:10,929 - DEBUG - 流式输出: 生成段落(长度=11)
+2025-05-29 20:41:11,010 - DEBUG - 流式输出: 生成段落(长度=164)
+2025-05-29 20:41:11,091 - DEBUG - 流式输出: 在行 27 检测到段落边界: **D. 拆卸发动机灭火瓶**
+2025-05-29 20:41:11,091 - DEBUG - 流式输出: 生成段落(长度=15)
+2025-05-29 20:41:11,173 - DEBUG - 流式输出: 在行 29 检测到段落边界: **子任务 26-21-11-864-002**
+2025-05-29 20:41:11,173 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:11,255 - DEBUG - 流式输出: 生成段落(长度=249)
+2025-05-29 20:41:11,337 - DEBUG - 流式输出: 在行 38 检测到段落边界: **子任务 26-21-11-864-003**
+2025-05-29 20:41:11,337 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:11,418 - DEBUG - 流式输出: 生成段落(长度=420)
+2025-05-29 20:41:11,500 - DEBUG - 流式输出: 在行 52 检测到段落边界: **警告：在执行静电敏感设备的操作程序之前，请勿触摸点爆管。静电释放可能导致灭火瓶突然释放其内含物，从而造成人员受伤和设备损坏。**
+2025-05-29 20:41:11,500 - DEBUG - 流式输出: 生成段落(长度=66)
+2025-05-29 20:41:11,581 - DEBUG - 流式输出: 生成段落(长度=48)
+2025-05-29 20:41:11,662 - DEBUG - 流式输出: 在行 56 检测到段落边界: **子任务 26-21-11-864-004**
+2025-05-29 20:41:11,662 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:11,744 - DEBUG - 流式输出: 生成段落(长度=57)
+2025-05-29 20:41:11,827 - DEBUG - 流式输出: 在行 60 检测到段落边界: **子任务 26-21-11-424-064**
+2025-05-29 20:41:11,827 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:11,908 - DEBUG - 流式输出: 在行 62 检测到段落边界: **警告：务必在灭火瓶点爆管上安装保护盖。如果未安装保护盖，灭火瓶可能突然释放其内含物，导致人员受伤。**
+2025-05-29 20:41:11,908 - DEBUG - 流式输出: 生成段落(长度=53)
+2025-05-29 20:41:11,989 - DEBUG - 流式输出: 生成段落(长度=20)
+2025-05-29 20:41:12,070 - DEBUG - 流式输出: 在行 66 检测到段落边界: **子任务 26-21-11-864-007**
+2025-05-29 20:41:12,070 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:12,151 - DEBUG - 流式输出: 生成段落(长度=36)
+2025-05-29 20:41:12,232 - DEBUG - 流式输出: 在行 70 检测到段落边界: **子任务 26-21-11-034-008**
+2025-05-29 20:41:12,232 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:12,313 - DEBUG - 流式输出: 生成段落(长度=22)
+2025-05-29 20:41:12,394 - DEBUG - 流式输出: 在行 74 检测到段落边界: **子任务 26-21-11-420-001**
+2025-05-29 20:41:12,394 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:12,476 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:41:12,559 - DEBUG - 流式输出: 在行 78 检测到段落边界: **子任务 26-21-11-420-002**
+2025-05-29 20:41:12,559 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:12,640 - DEBUG - 流式输出: 生成段落(长度=18)
+2025-05-29 20:41:12,720 - DEBUG - 流式输出: 在行 82 检测到段落边界: **子任务 26-21-11-034-009**
+2025-05-29 20:41:12,720 - DEBUG - 流式输出: 生成段落(长度=24)
+2025-05-29 20:41:12,802 - DEBUG - 流式输出: 生成段落(长度=23)
+2025-05-29 20:41:12,886 - DEBUG - 流式输出: 生成段落(长度=4)
+2025-05-29 20:41:12,967 - DEBUG - 流式输出: 在行 88 检测到段落边界: **来源：AMM手册**
+2025-05-29 20:41:12,967 - DEBUG - 流式输出: 生成段落(长度=12)
+2025-05-29 20:41:13,049 - DEBUG - 流式输出: 在行 90 检测到段落边界: * 章节 26-21-发动机灭火系统 的子章节
+2025-05-29 20:41:13,049 - DEBUG - 流式输出: 在行 91 检测到段落边界: * 主题 26-21-11-发动机灭火瓶 的子章节
+2025-05-29 20:41:13,049 - DEBUG - 流式输出: 生成段落(长度=23)
+2025-05-29 20:41:13,130 - DEBUG - 流式输出: 在行 92 检测到段落边界: * 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+2025-05-29 20:41:13,130 - DEBUG - 流式输出: 生成段落(长度=25)
+2025-05-29 20:41:13,212 - DEBUG - 流式输出: 生成段落(长度=32)
+2025-05-29 20:41:13,293 - DEBUG - 流式输出: 生成最后段落(长度=4)
+2025-05-29 20:41:13,293 - DEBUG - 流式输出完成，使用markdown渲染最终内容
+2025-05-29 20:41:13,294 - DEBUG - 最终渲染: 使用完整格式化内容
+2025-05-29 20:41:13,294 - DEBUG - 会话ID: 2529989430352
+2025-05-29 20:41:13,294 - DEBUG - 会话中的消息数量: 7
+2025-05-29 20:41:13,295 - DEBUG - 更新会话历史: 添加助手回复
+2025-05-29 20:41:13,295 - DEBUG - 添加到历史的消息长度: 1938
+2025-05-29 20:41:13,295 - DEBUG - 添加到历史的来源数量: 0
+2025-05-29 20:41:13,295 - DEBUG - 更新前会话消息数量: 7
+2025-05-29 20:41:13,295 - DEBUG - 会话更新完成，当前消息数: 8
+2025-05-29 20:41:13,300 - DEBUG - 聊天会话已保存到: chat_history\chat_sessions_1748522473.json
+2025-05-29 20:41:13,300 - DEBUG - 会话最后消息摘要: ![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：...
+2025-05-29 20:41:13,300 - WARNING - 消息 #3 可能缺少Markdown格式 (长度=1058)
+2025-05-29 20:41:13,301 - WARNING - 消息 #5 可能缺少Markdown格式 (长度=1090)
+2025-05-29 20:41:13,301 - WARNING - 检测到会话历史中存在格式不一致的消息
+2025-05-29 20:42:33,612 - DEBUG - 开始显示历史消息: 消息数量=8
+2025-05-29 20:42:33,612 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:42:33,613 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:42:33,613 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:42:33,614 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:42:33,614 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:42:33,614 - DEBUG - 预处理前的原始Markdown文本长度: 427
+2025-05-29 20:42:33,614 - DEBUG - 预处理前的原始Markdown文本 (截断):
+根据提供的背景信息，以下是液压油泄漏的具体处理指南：
+
+1. 针对一般液压油泄漏情况：
+- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）
+- 检查是否存在损坏或磨损部件
+- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件
+（来源：FIM Task 29-10TASK 8...
+...
+sk 29-10TASK 805）
+
+3. 针对系统间油液传输：
+- 每次刹车循环可能传输约5液量盎司
+- 应遵循《飞行操作手册》程序预防
+（来源：FIM Task 29-10TASK 806）
+
+**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。
+2025-05-29 20:42:33,614 - DEBUG - 预处理后的文本长度: 427
+2025-05-29 20:42:33,614 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=427, 新长度=427)
+2025-05-29 20:42:33,615 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:42:33,615 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:42:33,618 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:42:33,619 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:42:33,619 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:42:33,620 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:42:33,621 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:42:33,621 - DEBUG - 预处理前的原始Markdown文本长度: 1058
+2025-05-29 20:42:33,621 - DEBUG - 预处理前的原始Markdown文本 (截断):
+Based on the provided context, here are the key points regarding hydraulic oil leakage:
+
+1. For general hydraulic oil leaks:
+- Perform an external lea...
+...
+e leak source, then investigating specific components based on the leak location and symptoms observed.
+
+Source: FIM Tasks 29-10TASK 812, 805, and 806
+2025-05-29 20:42:33,621 - DEBUG - 预处理后的文本长度: 1058
+2025-05-29 20:42:33,621 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1058, 新长度=1058)
+2025-05-29 20:42:33,622 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:42:33,622 - DEBUG - 处理历史消息来源: 来源数量=5
+2025-05-29 20:42:33,625 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:42:33,625 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:42:33,625 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:42:33,626 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:42:33,626 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=False
+2025-05-29 20:42:33,626 - DEBUG - 预处理前的原始Markdown文本长度: 1090
+2025-05-29 20:42:33,626 - DEBUG - 预处理前的原始Markdown文本 (截断):
+A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic
+system A and B reservoirs.
+(2) ...
+...
+=31-62-801" class="task-link">31-62 TASK 801</a>.
+(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance
+message.
+2025-05-29 20:42:33,626 - DEBUG - 转换任务引用: 31-62 TASK 801 -> HTML链接
+2025-05-29 20:42:33,626 - DEBUG - 转换HTML任务链接: <a>...</a> -> 自定义HTML链接
+2025-05-29 20:42:33,626 - DEBUG - 预处理后的文本长度: 1139
+2025-05-29 20:42:33,627 - DEBUG - 历史消息格式化: 长度变化=49 (原长度=1090, 新长度=1139)
+2025-05-29 20:42:33,627 - WARNING - 历史消息可能缺少Markdown格式: A. Description
+(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid leve...
+2025-05-29 20:42:33,627 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)
+2025-05-29 20:42:33,627 - DEBUG - 处理历史消息来源: 来源数量=1
+2025-05-29 20:42:33,628 - DEBUG - 显示历史消息: 角色=user
+2025-05-29 20:42:33,628 - DEBUG - 处理用户历史消息: 直接显示
+2025-05-29 20:42:33,629 - DEBUG - 显示历史消息: 角色=assistant
+2025-05-29 20:42:33,629 - DEBUG - 处理助手历史消息: 先预处理再显示
+2025-05-29 20:42:33,629 - DEBUG - 历史消息原始Markdown分析: 标题=False, 代码块=False, 列表=True
+2025-05-29 20:42:33,630 - DEBUG - 预处理前的原始Markdown文本长度: 1938
+2025-05-29 20:42:33,630 - DEBUG - 预处理前的原始Markdown文本 (截断):
+![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)
+
+好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：
+
+---
+
+**发动机灭火瓶拆卸**
+
+**注意：** 此程序为计划性维护任务。
+
+**A. 设备...
+...
+26-21-11-034-009**
+
+(10) 拆下四个安装螺栓，然后拆下灭火瓶。
+
+---
+
+**来源：AMM手册**
+
+* 章节 26-21-发动机灭火系统 的子章节
+* 主题 26-21-11-发动机灭火瓶 的子章节
+* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装
+
+---
+2025-05-29 20:42:33,630 - DEBUG - 预处理后的文本长度: 1938
+2025-05-29 20:42:33,630 - DEBUG - 历史消息格式化: 长度变化=0 (原长度=1938, 新长度=1938)
+2025-05-29 20:42:33,630 - DEBUG - 历史消息渲染成功(使用unsafe_allow_html=True)

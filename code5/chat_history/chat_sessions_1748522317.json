@@ -1,0 +1,132 @@
+{
+  "会话 2": [
+    {
+      "role": "user",
+      "content": "液压油渗漏"
+    },
+    {
+      "role": "assistant",
+      "content": "根据提供的背景信息，以下是液压油泄漏的具体处理指南：\n\n1. 针对一般液压油泄漏情况：\n- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）\n- 检查是否存在损坏或磨损部件\n- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件\n（来源：FIM Task 29-10TASK 812）\n\n2. 若泄漏发生在油箱通气管路：\n- 可能原因包括：\n  * 油箱过满（特别是温度变化后）\n  * 释压阀故障\n  * 油量传感器/指示器问题\n  * 油箱增压系统故障\n  * 液压油串油\n- 需检查A系统和B系统油箱油量\n（来源：FIM Task 29-10TASK 805）\n\n3. 针对系统间油液传输：\n- 每次刹车循环可能传输约5液量盎司\n- 应遵循《飞行操作手册》程序预防\n（来源：FIM Task 29-10TASK 806）\n\n**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。",
+      "sources": [
+        {
+          "full_path": "29104000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：油液泄漏。",
+          "chunk_index": "29-10TASK 812"
+        },
+        {
+          "full_path": "29106000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路排泄管流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29105000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29107000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从系统A传输到系统B。",
+          "chunk_index": "29-10TASK 806"
+        },
+        {
+          "full_path": "282 100 02",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "chunk_index": "28-21TASK 813"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "液压油渗漏"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the provided context, here are the key points regarding hydraulic oil leakage:\n\n1. For general hydraulic oil leaks:\n- Perform an external leakage check (AMM TASK 29-00-00-790-801)\n- Check for damaged or worn parts (FIM 29-10TASK 812)\n- You can feel for hot tubes/actuators or listen for leaks to locate problematic components\n\n2. For leaks from reservoir vent lines:\n- Possible causes include overfilling, relief valve issues, or quantity transmitter problems (FIM 29-10TASK 805)\n- Check reservoir fluid levels (should not exceed full mark)\n- Note that large temperature changes can cause overflow if reservoirs are filled in cold conditions\n\n3. For system-to-system fluid transfer:\n- This can occur during brake operations (FIM 29-10TASK 806)\n- Follow normal procedures in Flight Operations Manual to prevent\n\nThe documents recommend starting with the external leakage check procedure to isolate the leak source, then investigating specific components based on the leak location and symptoms observed.\n\nSource: FIM Tasks 29-10TASK 812, 805, and 806",
+      "sources": [
+        {
+          "full_path": "29104000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：油液泄漏。",
+          "chunk_index": "29-10TASK 812"
+        },
+        {
+          "full_path": "29106000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路排泄管流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29105000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29107000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从系统A传输到系统B。",
+          "chunk_index": "29-10TASK 806"
+        },
+        {
+          "full_path": "282 100 02",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "chunk_index": "28-21TASK 813"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "29313000"
+    },
+    {
+      "role": "assistant",
+      "content": "A. Description\n(1) The hydraulic fluid quantity transmitter/indicators show the hydraulic fluid level in the hydraulic\nsystem A and B reservoirs.\n(2) The indicator shows the fluid quantity on the mechanical gage on the reservoir in the main\nlanding gear wheel well.\n(3) The transmitter sends signal to the display electronic units (DEUs). The fluid quantity shows on\nthe engine display.\nB. Possible Causes\n(1) Hydraulic fluid servicing\n(2) Failure from the CDU BITE procedure\nC. Related Data\n(1) (SSM 29-31-11)\n(2) (WDM 29-31-11)\nD. Fault Isolation Procedure\n(1) Fill the applicable hydraulic reservoir. To fill it, do this task: Hydraulic Reservoir Servicing, AMM\nTASK 12-12-00-610-801.\n(a) If the applicable hydraulic fluid quantity indicator shows F (100%), then you corrected the\nfault.\n(b) If the applicable hydraulic fluid quantity indicator does not show F (100%), then continue.\n(2) Do this task: CDS BITE Procedure, <a href=\"/?task=31-62-801\" class=\"task-link\">31-62 TASK 801</a>.\n(a) If the BITE test fails, then do the fault isolation task for the applicable maintenance\nmessage.",
+      "sources": [
+        {
+          "full_path": "293 130 00",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "Hydraulic fluid quantity indication:  Shows RF (76%) - system A.",
+          "chunk_index": "29-30TASK 815"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "如何拆卸发动机灭火器"
+    },
+    {
+      "role": "assistant",
+      "content": "![img](https://files-hank.oss-cn-beijing.aliyuncs.com//.wps1.jpg)\n\n好的，这是您提供的飞机维护手册（AMM）内容的中文翻译和重新排版：\n\n---\n\n**发动机灭火瓶拆卸**\n\n**注意：** 此程序为计划性维护任务。\n\n**A. 设备**\n\n(1) 点爆管保护盖 M83723/60 114 AN 或 AC\n\n**B. 参考资料**\n\n| 参考号        | 标题                                 |\n| ------------- | ------------------------------------ |\n| 204012 P/B 201 | 静电敏感设备维护规程                 |\n\n**C. 区域位置**\n\n| 区域 | 位置说明                               |\n| ---- | -------------------------------------- |\n|      | **静电敏感设备维护规程** |\n| 216  | 左主起落架舱                           |\n\n**D. 拆卸发动机灭火瓶**\n\n**子任务 26-21-11-864-002**\n\n(1) 打开P62负载控制中心面板上的这些断路器，并挂上“禁止闭合”标牌：\n    (a) 右发动机灭火瓶 (EXTINGUISHER BOTTLES RIGHT)\n    (b) 左发动机灭火瓶 (EXTINGUISHER BOTTLES LEFT)\n    (c) 右灭火瓶 (EXTINGUISHER BOTTLE RIGHT)\n    (d) 左灭火瓶 (EXTINGUISHER BOTTLE LEFT)\n    (e) APU灭火瓶 (EXTINGUISHER BOTTLE APU)\n\n**子任务 26-21-11-864-003**\n\n(2) 打开P63面板上的这些断路器：\n    (a) 主指示灯调光汇流条-电瓶 (INDICATOR MASTER DIM BUS BAT)\n    (b) 主指示灯调光汇流条-1号直流 (INDICATOR MASTER DIM BUS NO.1 DC)\n    (c) 主指示灯调光汇流条-2号直流 (INDICATOR MASTER DIM BUS NO. 2 DC)\n    (d) 指示灯区域1 (INDICATOR SECT 1)\n    (e) 指示灯区域2 (INDICATOR SECT 2)\n    (f) 指示灯区域3 (INDICATOR SECT 3)\n    (g) 指示灯区域4 (INDICATOR SECT 4)\n    (h) 指示灯区域5 (INDICATOR SECT 5)\n    (i) 指示灯区域6 (INDICATOR SECT 6)\n    (j) 调光与测试 (DIM & TEST)\n\n**警告：在执行静电敏感设备的操作程序之前，请勿触摸点爆管。静电释放可能导致灭火瓶突然释放其内含物，从而造成人员受伤和设备损坏。**\n\n(3) 在接触点爆管之前，请执行静电敏感设备的操作程序（参考页面模块 204012/201）。\n\n**子任务 26-21-11-864-004**\n\n(4) 在灭火瓶释放出口处，断开电气接头 D582 和 D1322（左瓶）或 D584 和 D1324（右瓶）。\n\n**子任务 26-21-11-424-064**\n\n**警告：务必在灭火瓶点爆管上安装保护盖。如果未安装保护盖，灭火瓶可能突然释放其内含物，导致人员受伤。**\n\n(5) 在每个点爆管接头上安装保护盖。\n\n**子任务 26-21-11-864-007**\n\n(6) 从压力表上断开电气接头 D586（左瓶）或 D588（右瓶）。\n\n**子任务 26-21-11-034-008**\n\n(7) 从灭火瓶释放出口断开两条释放管路。\n\n**子任务 26-21-11-420-001**\n\n(8) 在每个释放口上安装保护盖。\n\n**子任务 26-21-11-420-002**\n\n(9) 在每根释放管上安装保护盖。\n\n**子任务 26-21-11-034-009**\n\n(10) 拆下四个安装螺栓，然后拆下灭火瓶。\n\n---\n\n**来源：AMM手册**\n\n* 章节 26-21-发动机灭火系统 的子章节\n* 主题 26-21-11-发动机灭火瓶 的子章节\n* 页面模块 26-21-11/401-发动机灭火瓶-拆卸/安装\n\n---",
+      "sources": []
+    }
+  ],
+  "会话 4": []
+}

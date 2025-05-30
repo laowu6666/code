@@ -1,0 +1,63 @@
+graph TD
+    A[用户访问应用] --> B["应用初始化"];
+    B --> C{"RAG Pipeline 加载"};
+    C -- 成功 --> D["Pipeline 就绪, 模型加载完毕"];
+    C -- 失败 --> E["显示 Pipeline 加载错误, 部分功能受限"];
+
+    D --> F[渲染侧边栏];
+    F --> F1[聊天会话管理];
+        F1 --> F1a["新建/切换/删除会话"];
+        F1 --> F1b["保存/加载聊天记录到 JSON 文件"];
+    F --> F2[语言设置];
+    F --> F3[手册管理入口按钮];
+    F --> F4[关于/系统介绍];
+
+    B --> G{主界面显示逻辑};
+
+    G -- "手册管理模式" --> H[手册管理界面];
+        F3 -- 点击 --> G;
+        H --> H1["手册控制面板 (统计, 类型选择, 操作)"];
+        H --> H2["文件管理Tab (上传/查看/筛选/删除手册文件)"];
+        H --> H3["高级设置Tab (AI模型/索引/多语言/预处理配置)"];
+        H --> H4[返回问答按钮] --> G;
+
+    G -- "问答模式" --> I[问答主界面];
+        I --> J{"检查是否查看特定任务详情"};
+        J -- 是 --> K[获取并显示任务详情];
+            K --> K1["调用 RAG DataProcessor"];
+            K1 --> PreprocTaskMD["对任务内容调用 preprocess_markdown"];
+            PreprocTaskMD --> K2["渲染任务详情 (标题, 内容)"];
+            K2 --> K3[返回问答主界面按钮] --> I;
+            I -- "任务链接点击/URL导航" --> J;
+        J -- 否 --> L[进入主问答流程];
+            L --> M[显示当前会话的聊天记录];
+                M -- "历史助手消息" --> PreprocHistoryMD["对历史消息内容调用 preprocess_markdown"];
+            L --> N["用户输入问题"];
+            N --> AddUserMsg["将用户消息添加到聊天记录"];
+            AddUserMsg --> F1b;
+            AddUserMsg --> O{"调用 RAG Pipeline 查询"};
+            O -- "Pipeline可用" --> P["执行 rag_pipeline.query(prompt)"];
+                P --> P1["获取LLM回答文本和来源文档"];
+                P1 --> PreprocResponseMD["对回答文本调用 preprocess_markdown"];
+                PreprocResponseMD --> R[流式/逐步显示助手回答];
+                R --> R1["显示来源文档信息"];
+                R1 --> AddAssistantMsg["将助手回答和来源添加到聊天记录"];
+                AddAssistantMsg --> F1b;
+                AddAssistantMsg --> L;
+            O -- "Pipeline不可用或查询失败" --> T[显示查询错误信息];
+            T --> L;
+
+    classDef core_engine fill:#cff2ff,stroke:#0077b6,stroke-width:2px;
+    class C,O,K1 core_engine;
+
+    classDef preprocessing fill:#e0e0e0,stroke:#555555,stroke-width:1px;
+    class PreprocTaskMD,PreprocHistoryMD,PreprocResponseMD preprocessing;
+
+    classDef storage fill:#fff2cc,stroke:#ffa500,stroke-width:2px;
+    class F1b storage;
+
+    classDef error_flow fill:#ffdddd,stroke:#d00000,stroke-width:1px;
+    class E,T error_flow;
+
+    classDef ui_section fill:#e6f7ff,stroke:#91d5ff,stroke-width:1px;
+    class F,H,I,L,M,N,R,R1,K2 ui_section;

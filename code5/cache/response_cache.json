@@ -1,0 +1,389 @@
+{
+  "你好_zh": {
+    "timestamp": 1748521803.386795,
+    "data": {
+      "answer": "你好。提供的上下文并未包含对你问候的具体回应。如果你有任何与手册中描述的维护任务相关的技术问题，请随时提问。  \n\n**重要提示**：保持所有技术术语、数字、错误代码和任务编号的原始形式。",
+      "sources": [
+        {
+          "fault_code": "29303000",
+          "description": "ELEC 1 过热灯：灯亮。",
+          "fim_task": "29-30TASK 805",
+          "title": "ELEC 1 OVERHEAT Light On - Fault Isolation",
+          "score": 1.601601004600525
+        },
+        {
+          "fault_code": "29321051",
+          "description": "ENG 1 低压灯：灯亮。",
+          "fim_task": "29-30TASK 812",
+          "title": "ENG 1 LOW PRESSURE Light On - Fault Isolation",
+          "score": 1.5521636009216309
+        },
+        {
+          "fault_code": "323 080 42",
+          "description": "主起落架：收起缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.5485386848449707
+        },
+        {
+          "fault_code": "323 090 42",
+          "description": "主起落架：放下缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.5469639301300049
+        },
+        {
+          "fault_code": "323 120 00",
+          "description": "前起落架：放下缓慢。",
+          "fim_task": "32-30 TASK 806",
+          "title": "Nose Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.4926080703735352
+        }
+      ]
+    }
+  },
+  "你好不好_zh": {
+    "timestamp": 1748443393.9772174,
+    "data": {
+      "answer": "所提供的上下文不包含与用户问题“你好不好”相关的任何信息。上下文仅包含有关起落架系统的维护手册摘录。\n\n来源：所有提供的FIM任务（32-32 TASK 804 和 32-30 TASK 806）",
+      "sources": [
+        {
+          "fault_code": "323 080 42",
+          "description": "主起落架：收起缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.382319688796997
+        },
+        {
+          "fault_code": "323 090 42",
+          "description": "主起落架：放下缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.3635528087615967
+        },
+        {
+          "fault_code": "323 120 00",
+          "description": "前起落架：放下缓慢。",
+          "fim_task": "32-30 TASK 806",
+          "title": "Nose Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.3467504978179932
+        },
+        {
+          "fault_code": "323 080 41",
+          "description": "主起落架：收起缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.2850773334503174
+        },
+        {
+          "fault_code": "323 090 41",
+          "description": "主起落架：放下缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.2697786092758179
+        }
+      ]
+    }
+  },
+  "fuck you_en": {
+    "timestamp": 1748443433.5656028,
+    "data": {
+      "answer": "I'm here to assist with aircraft maintenance queries based on the provided manuals. If you have any technical questions, feel free to ask.  \n\n(No relevant context found for the user's statement.)",
+      "sources": [
+        {
+          "fault_code": "282 100 02",
+          "description": "Fuel tank: unwanted fuel transfer from a main tank to the center tank - from tank 2.",
+          "fim_task": "28-21TASK 813",
+          "title": "FIM Task 28-21TASK 813",
+          "score": 1.244259238243103
+        },
+        {
+          "fault_code": "282 012 48",
+          "description": "Refuel quantity indicator: Shows Ind FAlL - all tanks.",
+          "fim_task": "28-21 TASK 805",
+          "title": "Refuel Quantity Indicator Shows Ind FAIL - Fault Isolation ",
+          "score": 1.2064967155456543
+        },
+        {
+          "fault_code": "29104000",
+          "description": "Hydraulic fluid:  fluid leakage.",
+          "fim_task": "29-10TASK 812",
+          "title": "Hydraulic Fluid Leakage Problem - Fault Isolation",
+          "score": 1.180221438407898
+        },
+        {
+          "fault_code": "29303000",
+          "description": "ELEC 1 OVERHEAT light:  light on.",
+          "fim_task": "29-30TASK 805",
+          "title": "ELEC 1 OVERHEAT Light On - Fault Isolation",
+          "score": 1.119274377822876
+        },
+        {
+          "fault_code": "29105000",
+          "description": "Hydraulic fluid:  Comes out of the reservoir vent line.",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 1.1130175590515137
+        }
+      ]
+    }
+  },
+  "可以了？OK_zh": {
+    "timestamp": 1748443557.5247395,
+    "data": {
+      "answer": "根据提供的上下文，没有具体问题需要回答。用户仅表示“可以了？OK”，即“Ready? OK”或“Done? OK”。\n\n由于未提出关于手册中描述的起落架系统的实际技术问题，我无法提供与维护相关的解答。上下文仅包含起落架收放顺序及组件的说明。\n\n**如果您对起落架系统有具体问题**，请提出，我将根据手册内容进行解答。否则，当前上下文无法提供可执行的信息。  \n\n（注：严格保留所有技术术语如landing gear、系统名称及代码的原貌，未作翻译处理）",
+      "sources": [
+        {
+          "fault_code": "323 090 42",
+          "description": "主起落架：放下缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.74253249168396
+        },
+        {
+          "fault_code": "323 080 42",
+          "description": "主起落架：收起缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.7325005531311035
+        },
+        {
+          "fault_code": "323 120 00",
+          "description": "前起落架：放下缓慢。",
+          "fim_task": "32-30 TASK 806",
+          "title": "Nose Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.6935853958129883
+        },
+        {
+          "fault_code": "323 090 41",
+          "description": "主起落架：放下缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.6410167217254639
+        },
+        {
+          "fault_code": "323 080 41",
+          "description": "主起落架：收起缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.6293281316757202
+        }
+      ]
+    }
+  },
+  "液压油渗漏_zh": {
+    "timestamp": 1748522413.9204767,
+    "data": {
+      "answer": "根据提供的背景信息，以下是液压油泄漏的具体处理指南：\n\n1. 针对一般液压油泄漏情况：\n- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）\n- 检查是否存在损坏或磨损部件\n- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件\n（来源：FIM Task 29-10TASK 812）\n\n2. 若泄漏发生在油箱通气管路：\n- 可能原因包括：\n  * 油箱过满（特别是温度变化后）\n  * 释压阀故障\n  * 油量传感器/指示器问题\n  * 油箱增压系统故障\n  * 液压油串油\n- 需检查A系统和B系统油箱油量\n（来源：FIM Task 29-10TASK 805）\n\n3. 针对系统间油液传输：\n- 每次刹车循环可能传输约5液量盎司\n- 应遵循《飞行操作手册》程序预防\n（来源：FIM Task 29-10TASK 806）\n\n**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。",
+      "sources": [
+        {
+          "fault_code": "29104000",
+          "description": "液压油：油液泄漏。",
+          "fim_task": "29-10TASK 812",
+          "title": "Hydraulic Fluid Leakage Problem - Fault Isolation",
+          "score": 4.284694671630859
+        },
+        {
+          "fault_code": "29106000",
+          "description": "液压油：从储油箱通气管路排泄管流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.9997377395629883
+        },
+        {
+          "fault_code": "29105000",
+          "description": "液压油：从储油箱通气管路流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.9756598472595215
+        },
+        {
+          "fault_code": "29107000",
+          "description": "液压油：从系统A传输到系统B。",
+          "fim_task": "29-10TASK 806",
+          "title": "Hydraulic Fluid Transfers from System A to System B - Fault Isolation",
+          "score": 3.5596349239349365
+        },
+        {
+          "fault_code": "282 100 02",
+          "description": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "fim_task": "28-21TASK 813",
+          "title": "FIM Task 28-21TASK 813",
+          "score": 3.538174629211426
+        }
+      ]
+    }
+  },
+  "液压油渗漏_en": {
+    "timestamp": 1748522426.6172686,
+    "data": {
+      "answer": "Based on the provided context, here are the key points regarding hydraulic oil leakage:\n\n1. For general hydraulic oil leaks:\n- Perform an external leakage check (AMM TASK 29-00-00-790-801)\n- Check for damaged or worn parts (FIM 29-10TASK 812)\n- You can feel for hot tubes/actuators or listen for leaks to locate problematic components\n\n2. For leaks from reservoir vent lines:\n- Possible causes include overfilling, relief valve issues, or quantity transmitter problems (FIM 29-10TASK 805)\n- Check reservoir fluid levels (should not exceed full mark)\n- Note that large temperature changes can cause overflow if reservoirs are filled in cold conditions\n\n3. For system-to-system fluid transfer:\n- This can occur during brake operations (FIM 29-10TASK 806)\n- Follow normal procedures in Flight Operations Manual to prevent\n\nThe documents recommend starting with the external leakage check procedure to isolate the leak source, then investigating specific components based on the leak location and symptoms observed.\n\nSource: FIM Tasks 29-10TASK 812, 805, and 806",
+      "sources": [
+        {
+          "fault_code": "29104000",
+          "description": "液压油：油液泄漏。",
+          "fim_task": "29-10TASK 812",
+          "title": "Hydraulic Fluid Leakage Problem - Fault Isolation",
+          "score": 4.284694671630859
+        },
+        {
+          "fault_code": "29106000",
+          "description": "液压油：从储油箱通气管路排泄管流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.9997377395629883
+        },
+        {
+          "fault_code": "29105000",
+          "description": "液压油：从储油箱通气管路流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.9756598472595215
+        },
+        {
+          "fault_code": "29107000",
+          "description": "液压油：从系统A传输到系统B。",
+          "fim_task": "29-10TASK 806",
+          "title": "Hydraulic Fluid Transfers from System A to System B - Fault Isolation",
+          "score": 3.5596349239349365
+        },
+        {
+          "fault_code": "282 100 02",
+          "description": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "fim_task": "28-21TASK 813",
+          "title": "FIM Task 28-21TASK 813",
+          "score": 3.538174629211426
+        }
+      ]
+    }
+  },
+  "如何拆卸发动机油箱_en": {
+    "timestamp": 1748443830.42702,
+    "data": {
+      "answer": "The provided context does not contain any information about how to remove an engine fuel tank. The documents only cover topics related to engine fire switches, fuel quantity indicators, and hydraulic fluid overflow procedures.\n\nFor engine fuel tank removal procedures, you would need to consult the relevant aircraft maintenance manual sections that specifically address fuel system components and tank removal. The context given does not include this information.",
+      "sources": [
+        {
+          "fault_code": "282 100 02",
+          "description": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "fim_task": "28-21TASK 813",
+          "title": "FIM Task 28-21TASK 813",
+          "score": 4.217170238494873
+        },
+        {
+          "fault_code": "29120151",
+          "description": "发动机转动时灭火手柄处于拉出位置 - 发动机1。",
+          "fim_task": "29-11TASK 801",
+          "title": "Engine Driven Pump Operates (engine windmills) with the Supply Shutoff Valve Closed (fire\nhandle pulled) - Fault Isolation",
+          "score": 4.124124526977539
+        },
+        {
+          "fault_code": "29120152",
+          "description": "发动机转动时灭火手柄处于拉出位置 - 发动机2。",
+          "fim_task": "29-11TASK 801",
+          "title": "Engine Driven Pump Operates (engine windmills) with the Supply Shutoff Valve Closed (fire\nhandle pulled) - Fault Isolation",
+          "score": 4.075799942016602
+        },
+        {
+          "fault_code": "282 010 48",
+          "description": "加油量指示器：空白 - 所有油箱。",
+          "fim_task": "28-21 TASK 804",
+          "title": "Refuel Quantity Indicator Is Blank - Fault Isolation",
+          "score": 3.9799551963806152
+        },
+        {
+          "fault_code": "29105000",
+          "description": "液压油：从储油箱通气管路流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.978884220123291
+        }
+      ]
+    }
+  },
+  "如何拆卸发动机灭火瓶_zh": {
+    "timestamp": 1748444220.1993842,
+    "data": {
+      "answer": "所提供的上下文不包含任何关于如何拆卸发动机灭火瓶的信息。\n\n上下文仅涵盖以下内容：\n1. 发动机火警开关操作及EDP影响（FIM 29-11TASK 801/802）\n2. 液压油溢出情况（FIM 29-10TASK 805）\n3. 燃油阀指示灯和油量指示器问题（FIM 28-21 TASK 804/806）\n\n如需灭火瓶拆卸程序，请查阅相关AMM章节（可能为第26章 - 防火系统）。",
+      "sources": [
+        {
+          "fault_code": "29120151",
+          "description": "发动机转动时灭火手柄处于拉出位置 - 发动机1。",
+          "fim_task": "29-11TASK 801",
+          "title": "Engine Driven Pump Operates (engine windmills) with the Supply Shutoff Valve Closed (fire\nhandle pulled) - Fault Isolation",
+          "score": 4.0465521812438965
+        },
+        {
+          "fault_code": "29120152",
+          "description": "发动机转动时灭火手柄处于拉出位置 - 发动机2。",
+          "fim_task": "29-11TASK 801",
+          "title": "Engine Driven Pump Operates (engine windmills) with the Supply Shutoff Valve Closed (fire\nhandle pulled) - Fault Isolation",
+          "score": 3.966614246368408
+        },
+        {
+          "fault_code": "29105000",
+          "description": "液压油：从储油箱通气管路流出。",
+          "fim_task": "29-10TASK 805",
+          "title": "Hydraulic Fluid Comes Out of the Reservoir Vent Line/Drain Mast - Fault Isolation",
+          "score": 3.4644579887390137
+        },
+        {
+          "fault_code": "282 020 48",
+          "description": "加油活门灯：按下按压测试开关后灯不熄灭 - 所有油箱。",
+          "fim_task": "28-21 TASK 806",
+          "title": "VALVE POSITION LIGHT for the Fueling Shutoff Valve Does Not Go Off When The Valve Switch Is\nSet To CLOSED - Fault Isolation",
+          "score": 3.4618635177612305
+        },
+        {
+          "fault_code": "282 010 48",
+          "description": "加油量指示器：空白 - 所有油箱。",
+          "fim_task": "28-21 TASK 804",
+          "title": "Refuel Quantity Indicator Is Blank - Fault Isolation",
+          "score": 3.459397315979004
+        }
+      ]
+    }
+  },
+  "你是谁_zh": {
+    "timestamp": 1748521828.412128,
+    "data": {
+      "answer": "所提供的上下文不包含回答“你是谁”这一问题的信息。上下文仅涉及与起落架和电气系统过热相关的维护手册摘录。\n\n来源：无（提供的文件中无相关信息）",
+      "sources": [
+        {
+          "fault_code": "323 080 42",
+          "description": "主起落架：收起缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.0843536853790283
+        },
+        {
+          "fault_code": "323 090 42",
+          "description": "主起落架：放下缓慢 - 右侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.043256402015686
+        },
+        {
+          "fault_code": "323 080 41",
+          "description": "主起落架：收起缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 1.0076537132263184
+        },
+        {
+          "fault_code": "323 090 41",
+          "description": "主起落架：放下缓慢 - 左侧。",
+          "fim_task": "32-32 TASK 804",
+          "title": "Right (Left) Main Landing Gear Slow to Retract or Extend - Fault Isolation",
+          "score": 0.9782372117042542
+        },
+        {
+          "fault_code": "29303000",
+          "description": "ELEC 1 过热灯：灯亮。",
+          "fim_task": "29-30TASK 805",
+          "title": "ELEC 1 OVERHEAT Light On - Fault Isolation",
+          "score": 0.9122452139854431
+        }
+      ]
+    }
+  }
+}

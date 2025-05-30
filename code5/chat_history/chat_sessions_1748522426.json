@@ -1,0 +1,58 @@
+{
+  "会话 4": [
+    {
+      "role": "user",
+      "content": "液压油渗漏"
+    },
+    {
+      "role": "assistant",
+      "content": "根据提供的背景信息，以下是液压油泄漏的具体处理指南：\n\n1. 针对一般液压油泄漏情况：\n- 执行外部泄漏检查（AMM TASK 29-00-00-790-801）\n- 检查是否存在损坏或磨损部件\n- 可通过触摸发热管路/作动筒或听泄漏声来定位故障部件\n（来源：FIM Task 29-10TASK 812）\n\n2. 若泄漏发生在油箱通气管路：\n- 可能原因包括：\n  * 油箱过满（特别是温度变化后）\n  * 释压阀故障\n  * 油量传感器/指示器问题\n  * 油箱增压系统故障\n  * 液压油串油\n- 需检查A系统和B系统油箱油量\n（来源：FIM Task 29-10TASK 805）\n\n3. 针对系统间油液传输：\n- 每次刹车循环可能传输约5液量盎司\n- 应遵循《飞行操作手册》程序预防\n（来源：FIM Task 29-10TASK 806）\n\n**首要步骤**应按照AMM TASK 29-00-00-790-801执行外部泄漏检查以确定泄漏源。",
+      "sources": [
+        {
+          "full_path": "29104000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：油液泄漏。",
+          "chunk_index": "29-10TASK 812"
+        },
+        {
+          "full_path": "29106000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路排泄管流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29105000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从储油箱通气管路流出。",
+          "chunk_index": "29-10TASK 805"
+        },
+        {
+          "full_path": "29107000",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "液压油：从系统A传输到系统B。",
+          "chunk_index": "29-10TASK 806"
+        },
+        {
+          "full_path": "282 100 02",
+          "aircraft_type": "B737",
+          "manual_type": "FIM",
+          "language": "N/A",
+          "specific_section": "油箱：非预期的燃油从主油箱传输到中央油箱 - 从2号油箱。",
+          "chunk_index": "28-21TASK 813"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": "液压油渗漏"
+    }
+  ]
+}
